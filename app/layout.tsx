@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "../components/Header";
+import { NewsletterSection } from "../components/NewsletterSection";
+import { Footer } from "../components/Footer";
+import { BackToTop } from "../components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Murthal Dhaba — Authentic Flavours & Fine Dining",
@@ -14,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <NewsletterSection />
+        <Footer />
+        <BackToTop />
+      </body>
     </html>
   );
 }

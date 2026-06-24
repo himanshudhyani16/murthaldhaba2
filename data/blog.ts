@@ -1,0 +1,65 @@
+export const blogData = [
+  {
+    id: 1,
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2023",
+    author: "Rose",
+    title: "New menu added our menu you can exchange your test",
+  },
+  {
+    id: 2,
+    image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2023",
+    author: "Smith",
+    title: "It's very important to make healthy kitchen for fresh food",
+  },
+  {
+    id: 3,
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2023",
+    author: "David",
+    title: "Great food can make your all party more enjoyable",
+  },
+  {
+    id: 4,
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2023",
+    author: "Smith",
+    title: "How can convert your Dinner more enjoyable and testy",
+  },
+  {
+    id: 5,
+    image: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2023",
+    author: "Rose",
+    title: "Discover the new Menu with our new Chef & mistry test",
+  },
+  {
+    id: 6,
+    image: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2023",
+    author: "David",
+    title: "Details about our all Events for New Year celebration",
+  },
+  {
+    id: 7,
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2023",
+    author: "Rose",
+    title: "The secret to perfectly grilled steaks every time",
+  },
+  {
+    id: 8,
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2023",
+    author: "Smith",
+    title: "Why our seasonal ingredients make the difference",
+  },
+  {
+    id: 9,
+    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2023",
+    author: "David",
+    title: "A behind the scenes look at our busy kitchen",
+  }
+];
