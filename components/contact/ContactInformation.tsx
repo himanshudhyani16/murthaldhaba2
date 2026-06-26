@@ -47,9 +47,9 @@ export function ContactInformation() {
                 </h3>
               </div>
               <p className="text-gray-400 font-light pl-5.5 leading-relaxed">
-                245 D, South City Mixed Tower
+                619 A 36 Ave NE, Calgary,
                 <br />
-                Main Town, New York, USA
+                AB T2E 2L8, Canada
               </p>
             </div>
 
@@ -66,14 +66,14 @@ export function ContactInformation() {
                   href="mailto:info@examplesite.com"
                   className="hover:text-brand transition-colors block"
                 >
-                  info@examplesite.com
+                  murthal.dhaba36@gmail.com
                 </a>
-                <a
+                {/* <a
                   href="mailto:admin@examplesite.com"
                   className="hover:text-brand transition-colors block"
                 >
                   admin@examplesite.com
-                </a>
+                </a> */}
               </p>
             </div>
 
@@ -88,13 +88,13 @@ export function ContactInformation() {
                   href="tel:+12345678910"
                   className="hover:text-brand transition-colors block"
                 >
-                  +12345 678 910
+                  +1 204-951-5359
                 </a>
                 <a
                   href="tel:+12345876910"
                   className="hover:text-brand transition-colors block"
                 >
-                  +12345 876 910
+                  +1 403-454-3750
                 </a>
               </p>
             </div>

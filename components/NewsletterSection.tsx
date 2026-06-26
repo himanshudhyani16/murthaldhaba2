@@ -98,7 +98,7 @@ export function NewsletterSection() {
               href="tel:+01234567891"
               className="text-brand border-b border-brand pb-0.5 sm:ml-2 mt-2 sm:mt-0 hover:text-white hover:border-white transition-colors"
             >
-              +01234 567 891
+              +1 204-951-5359
             </a>
           </motion.div>
         </div>

@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { RiTiktokLine } from "react-icons/ri";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -40,40 +41,28 @@ export function Footer() {
             </p>
 
             <div className="flex items-center gap-3 mb-8">
-              <a
-                href="#"
+              <Link
+                href="https://www.facebook.com/Murthaldhaba36?rdid=OQBbXefiaaDL7vFq&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E38wqrPp6%2F#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-brand hover:bg-brand transition-all"
               >
                 <FaFacebook className="w-4 h-4" />
-              </a>
+              </Link>
               <a
                 href="#"
                 className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-brand hover:bg-brand transition-all"
               >
                 <RiTiktokLine className="w-4 h-4" />
               </a>
-              <a
-                href="#"
+              <Link
+                href="https://www.instagram.com/murthal_dhaaba/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-brand hover:bg-brand transition-all"
               >
                 <IoLogoInstagram className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-brand hover:bg-brand transition-all"
-              >
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                </svg>
-              </a>
+              </Link>
             </div>
 
             <div className="text-white text-[13px] font-medium">
@@ -134,9 +123,7 @@ export function Footer() {
             </h3>
             <div className="flex flex-col gap-6">
               <address className="not-italic text-gray-200 text-sm font-medium leading-[1.8] tracking-wide">
-                245 D, South City, Mixed Tower
-                <br />
-                Main town, New York, USA
+                619 A 36 Ave NE, Calgary, <br /> AB T2E 2L8, Canada
               </address>
 
               <div className="flex flex-col gap-2 text-gray-200 text-sm font-medium tracking-wide">
@@ -144,22 +131,29 @@ export function Footer() {
                   href="mailto:info@examplesite.com"
                   className="hover:text-brand transition-colors"
                 >
-                  info@examplesite.com
+                  murthal.dhaba36@gmail.com
                 </a>
-                <a
+                {/* <a
                   href="mailto:admin@examplesite.com"
                   className="hover:text-brand transition-colors"
                 >
                   admin@examplesite.com
-                </a>
+                </a> */}
               </div>
-
-              <a
-                href="tel:+12345678910"
-                className="text-gray-200 hover:text-brand text-sm font-medium transition-colors mt-2 tracking-wide"
-              >
-                +12345 678 910
-              </a>
+              <p>
+                <a
+                  href="tel:+12345678910"
+                  className="text-gray-200 hover:text-brand text-sm font-medium transition-colors mt-2 tracking-wide"
+                >
+                  +1 204-951-5359
+                </a>
+                <a
+                  href="tel:+12345876910"
+                  className="hover:text-brand transition-colors block"
+                >
+                  +1 403-454-3750
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -92,7 +92,7 @@ export function EventBookingSection() {
           >
             Call for Reservation 
             <a href="tel:+01234567891" className="text-brand border-b border-brand pb-0.5 ml-2 hover:text-white hover:border-white transition-colors">
-              +01234 567 891
+            +1 204-951-5359
             </a>
           </motion.div>
 
