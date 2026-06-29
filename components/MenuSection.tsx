@@ -1,8 +1,10 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const categories = ["Veg", "NonVeg", "Paratha", "Rolls"];
+const categories = ["Veg", "NonVeg", "Paratha", "Rolls"] as const;
+type Category = (typeof categories)[number];
 
 interface MenuItem {
   name: string;
@@ -11,7 +13,7 @@ interface MenuItem {
   badge?: string;
 }
 
-const menuData: Record<string, MenuItem[]> = {
+const menuData: Record<Category, MenuItem[]> = {
   Veg: [
     {
       name: "Paneer Butter Masala",
@@ -135,7 +137,7 @@ const menuData: Record<string, MenuItem[]> = {
   ],
 };
 
-const categoryImages = {
+const categoryImages: Record<Category, string> = {
   Veg: "/paneerButterMasala.jpg",
   NonVeg: "/chickenCurry.webp",
   Paratha: "/paratha.jpg",
@@ -143,16 +145,17 @@ const categoryImages = {
 };
 
 export function MenuSection() {
-  const [activeTab, setActiveTab] = useState("Breakfast");
+  const [activeTab, setActiveTab] = useState<Category>(categories[0]);
 
   return (
     <section className="relative w-full ">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
-        <img
+        <Image
           src="/restaurant1.jpg"
           alt="Background food"
-          // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
+          fill
+          sizes="100vw"
           className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
@@ -211,37 +214,35 @@ export function MenuSection() {
                 transition={{ duration: 0.3 }}
                 className="flex flex-col gap-8"
               >
-                {menuData[activeTab as keyof typeof menuData]?.map(
-                  (item, idx) => (
-                    <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.1 }}
-                      className="w-full flex flex-col"
-                    >
-                      <div className="w-full flex items-center justify-between mb-1">
-                        <div className="flex items-center gap-3">
-                          <h3 className="text-white text-lg font-medium">
-                            {item.name}
-                          </h3>
-                          {item.badge && (
-                            <span className="bg-brand text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm">
-                              {item.badge}
-                            </span>
-                          )}
-                        </div>
-                        <div className="flex-grow border-b-2 border-dotted border-white/20 mx-4 relative top-1"></div>
-                        <span className="text-white text-xl font-semibold">
-                          {item.price}
-                        </span>
+                {menuData[activeTab].map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="w-full flex flex-col"
+                  >
+                    <div className="w-full flex items-center justify-between mb-1">
+                      <div className="flex items-center gap-3">
+                        <h3 className="text-white text-lg font-medium">
+                          {item.name}
+                        </h3>
+                        {item.badge && (
+                          <span className="bg-brand text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm">
+                            {item.badge}
+                          </span>
+                        )}
                       </div>
-                      <p className="text-gray-400 text-sm font-light">
-                        {item.description}
-                      </p>
-                    </motion.div>
-                  ),
-                )}
+                      <div className="flex-grow border-b-2 border-dotted border-white/20 mx-4 relative top-1"></div>
+                      <span className="text-white text-xl font-semibold">
+                        {item.price}
+                      </span>
+                    </div>
+                    <p className="text-gray-400 text-sm font-light">
+                      {item.description}
+                    </p>
+                  </motion.div>
+                ))}
               </motion.div>
             </AnimatePresence>
           </div>
@@ -249,16 +250,22 @@ export function MenuSection() {
           {/* Right Tab Image */}
           <div className="w-full relative rounded-sm overflow-hidden min-h-[400px] lg:aspect-auto">
             <AnimatePresence mode="wait">
-              <motion.img
+              <motion.div
                 key={activeTab}
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                src={categoryImages[activeTab as keyof typeof categoryImages]}
-                alt={`${activeTab} signature dishes`}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+                className="absolute inset-0"
+              >
+                <Image
+                  src={categoryImages[activeTab]}
+                  alt={`${activeTab} signature dishes`}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </motion.div>
             </AnimatePresence>
             {/* Subtle overlay gradient to match the dark theme nicely */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none z-10"></div>
