@@ -6,22 +6,19 @@ const slides = [
   {
     discount: "Get 35% Discount",
     title: "Delicious & Mouth <br class='hidden md:block'/> Watering Test",
-    image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
+    image: "/chickenBiryani.webp",
     badge: "25",
   },
   {
     discount: "Today's Special",
     title: "Authentic Spices <br class='hidden md:block'/> & Fresh Taste",
-    image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
+    image: "/chicken.webp",
     badge: "15",
   },
   {
     discount: "Weekend Offer",
     title: "Finest Recipes <br class='hidden md:block'/> & Gourmet Touch",
-    image:
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80",
+    image: "/MurthalDhaba_DalMakhni.webp",
     badge: "20",
   },
 ];
