@@ -74,13 +74,7 @@ export function Footer() {
           <div className="flex flex-col lg:pl-10">
             <h3 className="text-white text-xl font-medium mb-8">Restaurant</h3>
             <ul className="flex flex-col gap-5">
-              {[
-                "About us",
-                "Our Menu",
-                "Book a Table",
-                "Blog Post",
-                "Contact",
-              ].map((item) => (
+              {["Home", "About Us", "Our Menu"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -95,15 +89,9 @@ export function Footer() {
 
           {/* Column 3 */}
           <div className="flex flex-col">
-            <h3 className="text-white text-xl font-medium mb-8">Information</h3>
+            <h3 className="text-white text-xl font-medium mb-8">Links</h3>
             <ul className="flex flex-col gap-5">
-              {[
-                "Terms & Conditions",
-                "24/7 Service",
-                "Style Guide",
-                "Licenses",
-                "Change Log",
-              ].map((item) => (
+              {["Blog Post", "Contact", "Gallery"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"

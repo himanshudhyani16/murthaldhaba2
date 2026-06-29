@@ -43,59 +43,59 @@ export function MenuCategory({ category, title, items }: MenuCategoryProps) {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <span className="text-brand uppercase tracking-[0.2em] text-sm font-semibold block mb-3">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand">{title}</h2>
+          <span className="text-white uppercase tracking-[0.2em] text-sm font-semibold block mb-3">
             {category}
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">{title}</h2>
         </motion.div>
 
-      {/* Menu Box */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-        className="relative w-full bg-[#0a1114]/80 backdrop-blur-md border border-white/5 p-8 md:p-12 lg:p-16 rounded-sm shadow-2xl"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10 relative">
-          {/* Subtle Vertical Divider for Desktop */}
-          <div className="hidden lg:block absolute top-4 bottom-4 left-1/2 w-[1px] bg-brand/20 -translate-x-1/2" />
+        {/* Menu Box */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="relative w-full bg-[#0a1114]/80 backdrop-blur-md border border-white/5 p-8 md:p-12 lg:p-16 rounded-sm shadow-2xl"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10 relative">
+            {/* Subtle Vertical Divider for Desktop */}
+            <div className="hidden lg:block absolute top-4 bottom-4 left-1/2 w-[1px] bg-brand/20 -translate-x-1/2" />
 
-          {items.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 * (idx % 6) }}
-              className="w-full flex flex-col"
-            >
-              <div className="w-full flex items-baseline justify-between mb-2 gap-3">
-                <div className="flex items-center gap-3 shrink-0">
-                  <h3 className="text-white text-xl md:text-2xl font-semibold">
-                    {item.name}
-                  </h3>
-                  {item.badge && (
-                    <span className="bg-brand text-white text-[10px] md:text-xs uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm shrink-0">
-                      {item.badge}
-                    </span>
-                  )}
+            {items.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * (idx % 6) }}
+                className="w-full flex flex-col"
+              >
+                <div className="w-full flex items-baseline justify-between mb-2 gap-3">
+                  <div className="flex items-center gap-3 shrink-0">
+                    <h3 className="text-white text-xl md:text-2xl font-semibold">
+                      {item.name}
+                    </h3>
+                    {item.badge && (
+                      <span className="bg-brand text-white text-[10px] md:text-xs uppercase font-bold tracking-wider px-2 py-0.5 rounded-sm shrink-0">
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Dotted Line */}
+                  <div className="flex-grow border-b-2 border-dotted border-white/20 relative bottom-1 mx-2"></div>
+
+                  <span className="text-white text-xl md:text-2xl font-bold shrink-0">
+                    {item.price}
+                  </span>
                 </div>
-
-                {/* Dotted Line */}
-                <div className="flex-grow border-b-2 border-dotted border-white/20 relative bottom-1 mx-2"></div>
-
-                <span className="text-white text-xl md:text-2xl font-bold shrink-0">
-                  {item.price}
-                </span>
-              </div>
-              <p className="text-gray-400 text-sm md:text-base font-light tracking-wide">
-                {item.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+                <p className="text-gray-400 text-sm md:text-base font-light tracking-wide">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

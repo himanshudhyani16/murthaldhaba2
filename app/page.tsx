@@ -17,8 +17,7 @@ export default function Home() {
     <>
       <div className="relative min-h-screen font-sans selection:bg-brand selection:text-white">
         <div className="bg-texture" />
-        <div className="flex flex-col w-full h-full relative z-10">
-   
+        <div className="flex flex-col w-full h-full relative z-10">   
           <Hero />
           <AboutSection />
           <EventBookingSection2 />
@@ -29,8 +28,6 @@ export default function Home() {
           <EventBookingSection />
           <TestimonialSection />
           <BlogSection />
-        
-     
         </div>
       </div>
     </>
