@@ -11,8 +11,7 @@ export function TestimonialSection() {
         "Murthal Dhaba is one of the most popular and tasty Restaurant with unique & special test food menu made by our passionate more anchefs with love and quality and love",
       name: "Maichel Williamson",
       role: "CTO, Morlex Group",
-      image:
-        "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=400&q=80",
+      image: "/user1.jpg",
     },
     {
       id: 2,
@@ -20,8 +19,7 @@ export function TestimonialSection() {
         "Murthal Dhaba is one of the most popular and tasty Restaurant with unique & special test food menu made by our passionate more anchefs with love and quality and love",
       name: "Jenny Wilson",
       role: "CEO, TechFlow",
-      image:
-        "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=400&q=80",
+      image: "/user2.jpg",
     },
     {
       id: 3,
@@ -29,8 +27,7 @@ export function TestimonialSection() {
         "We had a fantastic time at this place. The ambience was perfect and the food was simply outstanding. I will definitely be coming back with my family.",
       name: "Robert Fox",
       role: "Food Blogger",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+      image: "/user3.jpg",
     },
     {
       id: 4,
@@ -38,8 +35,7 @@ export function TestimonialSection() {
         "A truly extraordinary dining experience! The chef's special was a masterpiece, perfectly timed and executed with fresh ingredients.",
       name: "Sophia Martinez",
       role: "Local Guide",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      image: "/user4.jpg",
     },
     {
       id: 5,
@@ -47,8 +43,7 @@ export function TestimonialSection() {
         "The best place to spend an evening. The staff is polite, the atmosphere is cozy, and the menu brings a unique touch to traditional dishes.",
       name: "Daniel Lee",
       role: "Creative Director",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      image: "/user5.jpg",
     },
     {
       id: 6,
@@ -56,8 +51,7 @@ export function TestimonialSection() {
         "I hosted my birthday dinner here and the team made it incredibly special. Thank you for the wonderful memories and delicious treats!",
       name: "Emily Chen",
       role: "Entrepreneur",
-      image:
-        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80",
+      image: "/user6.jpg",
     },
   ];
 
@@ -200,9 +194,9 @@ export function TestimonialSection() {
                     <h4 className="text-brand font-medium text-lg">
                       {testimonial.name}
                     </h4>
-                    <p className="text-gray-400 text-xs mt-1">
+                    {/* <p className="text-gray-400 text-xs mt-1">
                       {testimonial.role}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
 
