@@ -1,7 +1,8 @@
 "use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 const links = [
   { name: "Home", href: "/" },
@@ -13,8 +14,23 @@ const links = [
 ];
 
 export function NavBar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
+
   return (
-    <nav className="w-full relative z-10 py-6 px-6 md:px-16 container mx-auto flex items-center justify-between">
+    <nav className="w-full relative z-50 py-6 px-6 md:px-16 container mx-auto flex items-center justify-between">
       {/* Logo */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -52,12 +68,15 @@ export function NavBar() {
         ))}
       </motion.div>
 
-      {/* Mobile Menu Placeholder - we could add a hamburger here but focusing on the visual */}
-      <div className="lg:hidden text-white cursor-pointer">
+      {/* Mobile Menu Toggle */}
+      <div 
+        className="lg:hidden text-white cursor-pointer relative z-50 p-2"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="28"
+          height="28"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -65,11 +84,46 @@ export function NavBar() {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <line x1="4" x2="20" y1="12" y2="12" />
-          <line x1="4" x2="20" y1="6" y2="6" />
-          <line x1="4" x2="20" y1="18" y2="18" />
+          {isMobileMenuOpen ? (
+            <>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </>
+          ) : (
+            <>
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </>
+          )}
         </svg>
       </div>
+
+      {/* Mobile Menu Off-Canvas */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", bounce: 0, duration: 0.4 }}
+            className="fixed top-0 right-0 w-full h-screen bg-[#160f0d]/95 backdrop-blur-lg lg:hidden flex flex-col justify-center items-center py-4 px-6 z-40"
+          >
+            <div className="flex flex-col items-center gap-8 w-full">
+              {links.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-3xl font-medium text-gray-200 hover:text-brand transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
