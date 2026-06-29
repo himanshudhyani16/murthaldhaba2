@@ -6,44 +6,39 @@ import { motion } from "motion/react";
 const videos = [
   {
     id: 1,
-    poster:
-      "/image1.png",
-    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video1.mp4",
+    poster: "/image1.png",
+    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video3.mp4",
+
     title: "Ambiance & Style",
   },
   {
     id: 2,
-    poster:
-      "/image2.png",
+    poster: "/image2.png",
     src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video2.mp4",
     title: "Craft Cocktails",
   },
   {
     id: 3,
-    poster:
-      "/image3.png",
-    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video3.mp4",
+    poster: "/image3.png",
+    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video1.mp4",
     title: "Evening Bliss",
   },
   {
     id: 4,
-    poster:
-      "/image1.png",
-    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video1.mp4",
+    poster: "/image1.png",
+    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video3.mp4",
     title: "Culinary Art",
   },
   {
     id: 5,
-    poster:
-      "/image2.png",
+    poster: "/image2.png",
     src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video2.mp4",
     title: "Morning Brew",
   },
   {
     id: 6,
-    poster:
-      "/image3.png",
-    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video3.mp4",
+    poster: "/image3.png",
+    src: "https://ik.imagekit.io/qlhkeyrjo/murthal/video1.mp4",
     title: "Signature Tastings",
   },
 ];
