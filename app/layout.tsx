@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Murthal Dhaba — Authentic Flavours & Fine Dining",
   description:
     "Experience the finest authentic cuisine at Murthal Dhaba. Book a table, explore our seasonal menu, and indulge in dishes crafted by our passionate chefs.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
