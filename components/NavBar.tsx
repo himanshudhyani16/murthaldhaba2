@@ -8,6 +8,7 @@ const links = [
   { name: "Menu", href: "/menu" },
   { name: "About Us", href: "/about" },
   { name: "Blog", href: "/blog" },
+  { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -18,18 +19,19 @@ export function NavBar() {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="flex items-center gap-3 cursor-pointer"
       >
-        <Image
-          src="/logo.png"
-          alt="Murthal Dhaba Logo"
-          width={104}
-          height={104}
-          className="w-26 h-26 rounded-full object-cover shrink-0 bg-black/20"
-        />
-        <span className="text-2xl md:text-3xl font-semibold text-white tracking-wide font-allura">
-          Murthal Dhaba
-        </span>
+        <Link href="/" className="flex items-center gap-3 cursor-pointer">
+          <Image
+            src="/logo.png"
+            alt="Murthal Dhaba Logo"
+            width={104}
+            height={104}
+            className="w-26 h-26 rounded-full object-cover shrink-0 bg-black/20"
+          />
+          <span className="text-2xl md:text-3xl font-semibold text-white tracking-wide font-allura">
+            Murthal Dhaba
+          </span>{" "}
+        </Link>
       </motion.div>
 
       {/* Desktop Links */}

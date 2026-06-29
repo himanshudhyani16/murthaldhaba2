@@ -74,14 +74,18 @@ export function Footer() {
           <div className="flex flex-col lg:pl-10">
             <h3 className="text-white text-xl font-medium mb-8">Restaurant</h3>
             <ul className="flex flex-col gap-5">
-              {["Home", "About Us", "Our Menu"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
+              {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: "Our Menu", href: "/menu" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
                     className="text-gray-200 hover:text-brand text-sm font-medium transition-colors tracking-wide"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -91,14 +95,18 @@ export function Footer() {
           <div className="flex flex-col">
             <h3 className="text-white text-xl font-medium mb-8">Links</h3>
             <ul className="flex flex-col gap-5">
-              {["Blog Post", "Contact", "Gallery"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
+              {[
+                { label: "Blog Post", href: "/blog" },
+                { label: "Contact", href: "/contact" },
+                { label: "Gallery", href: "#" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
                     className="text-gray-200 hover:text-brand text-sm font-medium transition-colors tracking-wide"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -116,27 +124,21 @@ export function Footer() {
 
               <div className="flex flex-col gap-2 text-gray-200 text-sm font-medium tracking-wide">
                 <a
-                  href="mailto:info@examplesite.com"
+                  href="mailto:murthal.dhaba36@gmail.com"
                   className="hover:text-brand transition-colors"
                 >
                   murthal.dhaba36@gmail.com
                 </a>
-                {/* <a
-                  href="mailto:admin@examplesite.com"
-                  className="hover:text-brand transition-colors"
-                >
-                  admin@examplesite.com
-                </a> */}
               </div>
               <p>
                 <a
-                  href="tel:+12345678910"
+                  href="tel:+12049515359"
                   className="text-gray-200 hover:text-brand text-sm font-medium transition-colors mt-2 tracking-wide"
                 >
                   +1 204-951-5359
                 </a>
                 <a
-                  href="tel:+12345876910"
+                  href="tel:+14034543750"
                   className="hover:text-brand transition-colors block"
                 >
                   +1 403-454-3750

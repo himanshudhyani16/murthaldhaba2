@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const categories = ["Breakfast", "Brunch", "Lunch", "Dinner"];
+const categories = ["Veg", "NonVeg", "Paratha", "Rolls"];
 
 interface MenuItem {
   name: string;
@@ -12,170 +12,134 @@ interface MenuItem {
 }
 
 const menuData: Record<string, MenuItem[]> = {
-  Breakfast: [
+  Veg: [
     {
-      name: "Grill Salmon",
-      price: "$27.85",
-      description: "Soft and juice, with garlic & ginger",
-      badge: "RECOMMENDED",
+      name: "Paneer Butter Masala",
+      price: "$13.99",
+      description: "Cottage cheese cubes in a spicy and creamy tomato gravy",
     },
     {
-      name: "Summertime Pesto Pasta",
-      price: "$20.00",
-      description: "Soft and juice, with garlic & ginger",
+      name: "Kadhai Paneer",
+      price: "$13.99",
+      description: "Cottage cheese cooked with bell peppers and whole spices",
     },
     {
-      name: "Crispy Skin Chicken",
-      price: "$15.15",
-      description: "Ricotta, radicchio, prosciutto salad, cabernet.",
+      name: "Lehsooni Chaap Masala",
+      price: "$13.99",
+      description: "Soya chaap cooked with bold garlic and aromatic spices",
+    },
+
+    {
+      name: "Shahi Paneer",
+      price: "$15.99",
+      description: "Cottage cheese in a royal creamy cashew gravy",
     },
     {
-      name: "Pan Fried Barramundi",
-      price: "$27.85",
-      description: "Soft and juice, with garlic & ginger",
-    },
-    {
-      name: "BBQ ribs",
-      price: "$10.20",
-      description: "Chicken ribs, garlic & ginger, green sauce",
-      badge: "SEASONAL",
-    },
-    {
-      name: "Coconut Chia Bowl",
-      price: "$12.85",
-      description: "Soft and juice, with garlic & ginger",
-    },
-    {
-      name: "Cassonut Salad",
-      price: "$16.85",
-      description: "Tomato, Salt, Black Pepper, Lemon",
-      badge: "CHEF CHOICE",
+      name: "Dhaba Style Rajma",
+      price: "$14.99",
+      description: "Red kidney beans cooked in a traditional homestyle gravy",
     },
   ],
-  Brunch: [
+  NonVeg: [
     {
-      name: "Egg Benedict",
-      price: "$18.50",
-      description: "Poached eggs, hollandaise, English muffin",
-      badge: "RECOMMENDED",
+      name: "Tandoori Chicken",
+      price: "$17.99",
+      description:
+        "Classic marinated chicken roasted in a tandoor (Half - 4 pcs | Full - 8 pcs)",
+    },
+
+    {
+      name: "Butter Chicken",
+      price: "$14.99",
+      description:
+        "Tender chicken cooked in a rich, creamy tomato and butter sauce",
     },
     {
-      name: "Avocado Toast",
-      price: "$14.00",
-      description: "Sourdough, smashed avocado, cherry tomatoes",
+      name: "Chicken Curry",
+      price: "$13.99",
+      description:
+        "Classic homestyle chicken curry cooked with traditional Indian spices",
+    },
+
+    // Right Column
+    {
+      name: "Palak Chicken",
+      price: "$16.99",
+      description:
+        "Chicken pieces simmered in a spiced and creamy spinach gravy",
     },
     {
-      name: "Pancakes",
-      price: "$12.50",
-      description: "Maple syrup, fresh berries, whipped butter",
-    },
-    {
-      name: "French Toast",
-      price: "$16.00",
-      description: "Brioche, cinnamon, powdered sugar",
-    },
-    {
-      name: "Smoked Salmon Bagel",
-      price: "$15.50",
-      description: "Cream cheese, capers, red onion, dill",
-    },
-    {
-      name: "Shakshuka",
-      price: "$17.00",
-      description: "Baked eggs, spiced tomato sauce, feta, sourdough",
-      badge: "POPULAR",
-    },
-    {
-      name: "Breakfast Burrito",
-      price: "$13.50",
-      description: "Scrambled eggs, black beans, salsa, cheese",
+      name: "Kadhai Chicken",
+      price: "$14.99",
+      description:
+        "Chicken cooked with fresh bell peppers, onions, and kadhai spices",
     },
   ],
-  Lunch: [
+  Paratha: [
     {
-      name: "Wagyu Burger",
-      price: "$24.00",
-      description: "Grass-fed beef, cheddar, caramelised onion",
+      name: "Aloo Paratha",
+      price: "$3.99",
+      description:
+        "Flaky whole wheat flatbread stuffed with spiced mashed potatoes",
     },
     {
-      name: "Caesar Salad",
-      price: "$15.00",
-      description: "Cos lettuce, bacon, croutons, parmesan",
+      name: "Paneer Paratha",
+      price: "$6.99",
+      description: "Flatbread stuffed with spiced grated cottage cheese",
     },
     {
-      name: "Fish and Chips",
-      price: "$22.00",
-      description: "Beer battered flathead, tartare sauce",
+      name: "Gobi Paratha",
+      price: "$4.99",
+      description: "Flatbread stuffed with savory spiced cauliflower",
     },
     {
-      name: "Margherita Pizza",
-      price: "$18.00",
-      description: "Fresh mozzarella, tomato sauce, basil",
-      badge: "CLASSIC",
+      name: "Egg Paratha",
+      price: "$6.99",
+      description: "A tasty layered flatbread cooked with a spiced egg mixture",
     },
     {
-      name: "Grilled Chicken Wrap",
-      price: "$14.50",
-      description: "Lettuce, tomato, avocado, aioli",
-    },
-    {
-      name: "Quinoa Salad Bowl",
-      price: "$16.00",
-      description: "Mixed greens, roasted veggies, lemon dressing",
-    },
-    {
-      name: "Beef Tacos",
-      price: "$19.00",
-      description: "Slow-cooked beef, pico de gallo, sour cream",
-      badge: "SPICY",
+      name: "Keema Paratha",
+      price: "$8.99",
+      description: "Flatbread stuffed with savory spiced minced meat",
     },
   ],
-  Dinner: [
+  Rolls: [
     {
-      name: "Ribeye Steak",
-      price: "$45.00",
-      description: "300g premium cut, garlic butter, asparagus",
-      badge: "CHEF CHOICE",
+      name: "Paneer Roll",
+      price: "$15.99",
+      description:
+        "Spiced paneer cubes wrapped in a soft flatbread with onions and chutney",
     },
     {
-      name: "Lobster Ravioli",
-      price: "$32.00",
-      description: "Handmade pasta, creamy bisque sauce",
+      name: "Chicken Roll",
+      price: "$21.99",
+      description:
+        "Tender spiced chicken pieces rolled with fresh veggies and tangy sauces",
     },
     {
-      name: "Mushroom Risotto",
-      price: "$26.00",
-      description: "Arborio rice, truffle oil, parmesan",
+      name: "Egg Roll",
+      price: "$17.99",
+      description:
+        "A classic street-style egg roll with crispy onions and sauces",
     },
     {
-      name: "Roasted Duck",
-      price: "$38.00",
-      description: "Plum sauce, bok choy, jasmine rice",
+      name: "Chaap Roll",
+      price: "$11.99",
+      description: "Flavorful soya chaap wrapped in a soft paratha",
     },
     {
-      name: "Pan-Seared Scallops",
-      price: "$29.00",
-      description: "Cauliflower purée, crispy pancetta",
-    },
-    {
-      name: "Lamb Shanks",
-      price: "$35.00",
-      description: "Slow-braised, mashed potatoes, red wine jus",
-      badge: "RECOMMENDED",
-    },
-    {
-      name: "Eggplant Parmesan",
-      price: "$22.00",
-      description: "Layers of eggplant, marinara, mozzarella",
+      name: "Seekh Roll",
+      price: "$14.99",
+      description: "Juicy minced kebabs wrapped in a warm flatbread",
     },
   ],
 };
 
 const categoryImages = {
-  Breakfast: "/chickenRoll.jpg",
-  Brunch: "/chickenNoodles.jpg",
-  Lunch: "/chickenCurry.webp",
-  Dinner: "/chickenBiryani.webp",
+  Veg: "/paneerButterMasala.jpg",
+  NonVeg: "/chickenCurry.webp",
+  Paratha: "/paratha.jpg",
+  Rolls: "/chickenRoll.jpg",
 };
 
 export function MenuSection() {
@@ -247,7 +211,7 @@ export function MenuSection() {
                 transition={{ duration: 0.3 }}
                 className="flex flex-col gap-8"
               >
-                {menuData[activeTab as keyof typeof menuData].map(
+                {menuData[activeTab as keyof typeof menuData]?.map(
                   (item, idx) => (
                     <motion.div
                       key={idx}
