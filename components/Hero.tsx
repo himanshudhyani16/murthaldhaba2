@@ -18,7 +18,7 @@ const slides = [
   {
     discount: "Weekend Offer",
     title: "Finest Recipes <br class='hidden md:block'/> & Gourmet Touch",
-    image: "/MurthalDhaba_DalMakhni.webp",
+     image: "/MurthalDhaba_DalMakhni.webp",
     badge: "20",
   },
 ];

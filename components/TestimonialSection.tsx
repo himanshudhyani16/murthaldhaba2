@@ -147,7 +147,7 @@ export function TestimonialSection() {
           transition={{ delay: 0.1 }}
           className="text-4xl md:text-5xl font-semibold leading-tight text-white mb-16 text-center relative z-10 "
         >
-          Reviews about our test
+       Our Happy Customers
         </motion.h2>
 
         <div

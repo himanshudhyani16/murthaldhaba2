@@ -145,10 +145,10 @@ const categoryImages: Record<Category, string> = {
 };
 
 export function MenuSection() {
-  const [activeTab, setActiveTab] = useState<Category>(categories[0]);
+  const [activeTab, setActiveTab] = useState<Category>("Veg");
 
   return (
-    <section className="relative w-full ">
+    <section className="relative w-full z-10">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
         <Image
@@ -168,7 +168,7 @@ export function MenuSection() {
           viewport={{ once: true }}
           className="font-allura text-brand text-4xl mb-4 z-10"
         >
-          Test a Little Bit
+          Taste the Tradition
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -5,7 +5,7 @@ export function Header() {
   return (
     <>
       <header className="w-full absolute z-20">
-        <TopBar />
+        {/* <TopBar /> */}
         <NavBar />
       </header>
     </>
