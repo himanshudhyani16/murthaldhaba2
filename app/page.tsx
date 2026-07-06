@@ -1,5 +1,6 @@
+"use client";
 
-
+import { useEffect, useState } from "react";
 import { Hero } from "../components/Hero";
 import { AboutSection } from "../components/AboutSection";
 import { VibeSection } from "../components/VibeSection";
@@ -11,15 +12,42 @@ import { TestimonialSection } from "../components/TestimonialSection";
 import { BlogSection } from "../components/BlogSection";
 
 import { EventBookingSection2 } from "../components/EventBookingSection2";
+import UpcomingEvents from "@/components/UpcomingEvents";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
+  const HERO_IMAGES = [
+    "/patio1.jpeg",
+    "/patio2.jpeg",
+    "/DSC03063.jpg",
+    "/insta/DSC03107.webp",
+    "/insta/DSC02110.webp",
+    "/insta/DSC02108.webp",
+  ];
+
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+  // const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div className="relative min-h-screen font-sans selection:bg-brand selection:text-white">
         <div className="bg-texture" />
-        <div className="flex flex-col w-full h-full relative z-10">   
-          <Hero />
+        <div className="flex flex-col w-full h-full relative z-10">
+          <HeroSection
+            heroImages={HERO_IMAGES}
+            currentBgIndex={currentBgIndex}
+          />
+          {/* <Hero /> */}
           <AboutSection />
+          {/* <UpcomingEvents /> */}
           <EventBookingSection2 />
           <VibeSection />
           <MenuSection />

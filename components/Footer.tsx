@@ -50,7 +50,7 @@ export function Footer() {
                 <FaFacebook className="w-4 h-4" />
               </Link>
               <a
-                href="#"
+                href="https://www.tiktok.com/@murthal_dhaba"
                 className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-brand hover:bg-brand transition-all"
               >
                 <RiTiktokLine className="w-4 h-4" />
@@ -98,7 +98,7 @@ export function Footer() {
               {[
                 { label: "Blog Post", href: "/blog" },
                 { label: "Contact", href: "/contact" },
-                { label: "Gallery", href: "#" },
+                { label: "Gallery", href: "/gallery" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link

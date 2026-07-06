@@ -45,6 +45,7 @@ export function BlogSection() {
           {blogPosts.map((post, idx) => (
             <BlogCard
               key={post.id}
+              slug={post.slug}
               image={post.image}
               date={post.date}
               author={post.author}

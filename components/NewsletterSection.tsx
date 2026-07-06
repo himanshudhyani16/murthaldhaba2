@@ -7,7 +7,7 @@ export function NewsletterSection() {
       {/* Left Promotional Area */}
       <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-[500px]">
         <img
-          src="/patio2.jpeg"
+          src="/patio1.jpeg"
           alt="Restaurant Food"
           className="absolute inset-0 w-full h-full object-cover"
         />

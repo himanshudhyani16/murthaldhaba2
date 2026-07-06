@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import { blogData } from "@/data/blog";
@@ -18,8 +18,11 @@ export function BlogGrid() {
     if (sectionRef.current) {
       // Calculate an offset if there's a sticky header, or simply scroll into view
       const yOffset = -100; // Adjust if you have a fixed navbar
-      const y = sectionRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      const y =
+        sectionRef.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
@@ -37,12 +40,12 @@ export function BlogGrid() {
 
       {/* Content Container */}
       <div className="relative z-10 w-full px-4 md:px-8 max-w-7xl mx-auto flex flex-col items-center">
-        
         {/* Grid of Blog Cards */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentPosts.map((post, idx) => (
             <BlogCard
               key={post.id}
+              slug={post.slug}
               image={post.image}
               date={post.date}
               author={post.author}
@@ -53,7 +56,7 @@ export function BlogGrid() {
         </div>
 
         {/* Pagination Buttons */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -61,7 +64,7 @@ export function BlogGrid() {
           className="mt-16 flex items-center gap-4"
         >
           {currentPage > 1 && (
-            <button 
+            <button
               onClick={() => handlePageChange(currentPage - 1)}
               className="px-8 py-3 border border-white text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
             >
@@ -69,7 +72,7 @@ export function BlogGrid() {
             </button>
           )}
           {currentPage < totalPages && (
-            <button 
+            <button
               onClick={() => handlePageChange(currentPage + 1)}
               className="px-8 py-3 border border-white text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
             >
@@ -77,7 +80,6 @@ export function BlogGrid() {
             </button>
           )}
         </motion.div>
-
       </div>
     </section>
   );

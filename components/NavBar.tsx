@@ -23,7 +23,7 @@ export function NavBar() {
     } else {
       document.body.style.overflow = "unset";
     }
-    
+
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -42,11 +42,11 @@ export function NavBar() {
             alt="Murthal Dhaba Logo"
             width={104}
             height={104}
-            className="w-26 h-26 rounded-full object-cover shrink-0 bg-black/20"
+            className="w-36 h-36 rounded-full object-cover shrink-0 bg-black/20"
           />
-          <span className="text-2xl md:text-3xl font-semibold text-white tracking-wide font-allura">
+          {/* <span className="text-2xl md:text-3xl font-semibold text-white tracking-wide font-allura">
             Murthal Dhaba
-          </span>{" "}
+          </span>{" "} */}
         </Link>
       </motion.div>
 
@@ -67,9 +67,11 @@ export function NavBar() {
           </Link>
         ))}
       </motion.div>
-
+      <button className="mt-4 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
+     FIND A TABLE
+      </button>
       {/* Mobile Menu Toggle */}
-      <div 
+      <div
         className="lg:hidden text-white cursor-pointer relative z-50 p-2"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >

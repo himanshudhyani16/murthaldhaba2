@@ -18,7 +18,7 @@ const slides = [
   {
     discount: "Weekend Offer",
     title: "Finest Recipes <br class='hidden md:block'/> & Gourmet Touch",
-     image: "/MurthalDhaba_DalMakhni.webp",
+    image: "/MurthalDhaba_DalMakhni.webp",
     badge: "20",
   },
 ];
@@ -47,14 +47,15 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-screen lg:h-screen flex items-center overflow-hidden pt-[220px] md:pt-[180px] lg:pt-[141px] pb-12 lg:pb-0">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
+      <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]"> */}
         <img
           src="/patio1.jpeg"
           alt="Background food"
           // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
-          className="w-full h-full object-cover opacity-20 "
+          className="w-full h-full object-cover opacity-[0.7] "
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" /> */}
       </div>
       <div className="w-full flex flex-col lg:flex-row items-center justify-between px-6 md:px-16 container mx-auto">
         {/* Left Content */}

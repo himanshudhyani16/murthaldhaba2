@@ -97,7 +97,7 @@ export function ExperienceSection() {
       {/* Right Image Area */}
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative order-1 lg:order-2 z-10">
         <img
-          src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80"
+          src="/insta/DSC02108.webp"
           alt="Chef preparing food"
           className="absolute inset-0 w-full h-full object-cover"
         />
