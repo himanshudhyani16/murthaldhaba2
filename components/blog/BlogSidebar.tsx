@@ -79,7 +79,7 @@ export function BlogSidebar({ currentSlug }: { currentSlug?: string }) {
       {/* Promo banner */}
       <div className="relative overflow-hidden rounded-sm">
         <img
-          src="/poster.jpg"
+          src="/poster.heic"
           alt="Fresh & Organic Healthy Food"
           className="w-full object-cover"
         />

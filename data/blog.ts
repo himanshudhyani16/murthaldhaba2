@@ -15,192 +15,87 @@ export type BlogPost = {
 export const blogData: BlogPost[] = [
   {
     id: 1,
-    slug: "new-menu-added-our-menu",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    slug: "best-indian-restaurant-calgary-authentic-north-indian-food",
+    image: "/patio1.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+      "/photo-1585937421612-70a008356fbe.avif",
+      "/photo-1603894584373-5ac82b2ae398.avif",
     ],
-    date: "November 9, 2023",
-    author: "Rose",
-    title: "New menu added our menu you can exchange your test",
-    category: "Recipes",
+    date: "July 6, 2026",
+    author: "Murthal Dhaba",
+    title: "Experience Authentic North Indian Food at Murthal Dhaba in Calgary",
+    category: "Restaurant",
     excerpt:
-      "Japanese food is one of the most popular Restaurant with unique & special menu made by our passionate chefs with love in quality.",
+      "Discover why Murthal Dhaba is one of the best Indian restaurants in Calgary. From authentic North Indian cuisine and tandoori specialties to vibrant events and a pet-friendly patio, every visit is a celebration of great food and warm hospitality.",
     content: [
-      "Japanese food is one of the most popular Restaurant with unique & special menu made by our passionate chefs with love in quality which can impress you more than great test that can happy with the passionate Chef's we always provide the with love and quality with can impress more than great test that can happy with the passionate and love with the test for all our customers.",
-      "Japanese food is one of the most popular Restaurant with unique & special menu made by our passionate chefs with love and quality with can impress you more than great test that can happy with the passionate Chef's we always provide the best with love and quality with can impress more than great test that can happy with the passionate and love with the test for all our customers.",
+      "If you're searching for the best Indian restaurant in Calgary, Murthal Dhaba offers an unforgettable dining experience inspired by the rich culinary traditions of North India. Our menu features authentic recipes prepared with fresh ingredients, premium spices, and traditional cooking techniques that deliver the true flavors of India. From creamy butter chicken and aromatic biryani to sizzling tandoori platters and freshly baked naan, every dish is crafted with passion and care.",
+
+      "Murthal Dhaba is more than just a place to eat—it's where families, friends, and the Calgary community come together. Whether you're planning a casual lunch, romantic dinner, weekend outing, birthday celebration, or corporate event, our welcoming atmosphere and exceptional hospitality make every occasion memorable. We also host private parties, cultural celebrations, and festive events throughout the year.",
+
+      "Looking for outdoor dining? Our spacious pet-friendly patio allows you to enjoy authentic Indian cuisine while spending quality time with family, friends, and even your furry companions. Pair your favorite dishes with refreshing beverages and experience one of Calgary's most welcoming dining destinations.",
+
+      "At Murthal Dhaba, our mission is simple: serve authentic Indian food, create memorable experiences, and bring people together through delicious cuisine and genuine hospitality. Visit us today and discover why guests continue to choose Murthal Dhaba for the best North Indian food in Calgary.",
     ],
-    tags: ["Lunch", "Dinner", "Desert"],
+    tags: [
+      "Indian Restaurant",
+      "North Indian Cuisine",
+      "Calgary",
+      "Murthal Dhaba",
+    ],
   },
   {
     id: 2,
-    slug: "healthy-kitchen-for-fresh-food",
-    image:
-      "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 9, 2023",
-    author: "Smith",
-    title: "It's very important to make healthy kitchen for fresh food",
-    category: "Food Story",
+    slug: "top-10-must-try-indian-dishes-in-calgary",
+    image: "/chickenBiryani.webp",
+    gallery: ["/chicken.webp", "/paneerButterMasala.jpg"],
+    date: "July 10, 2026",
+    author: "Murthal Dhaba",
+    title: "Must-Try Indian Dishes in Calgary",
+    category: "Food Guide",
     excerpt:
-      "Keeping a healthy kitchen means fresher ingredients, better hygiene and a happier dining experience for every guest.",
+      "Explore the most popular Indian dishes in Calgary, from Butter Chicken and Paneer Tikka to Biryani and Tandoori specialties. Find your next favorite meal at Murthal Dhaba.",
     content: [
-      "A healthy kitchen is the foundation of every great meal we serve. Our chefs source fresh ingredients daily, follow strict hygiene standards and take pride in a spotless, well organised kitchen that respects both the food and the people who prepare it.",
-      "From the storage of vegetables to the final plating, every step is designed to preserve nutrition and flavour, so that what reaches your table is always fresh, safe and full of taste.",
+      "Indian cuisine is known for its rich flavors, aromatic spices, and diverse regional specialties. At Murthal Dhaba, we bring the authentic taste of North India to Calgary with a menu that satisfies every craving.",
+      "Our guests love signature dishes like Butter Chicken, Tandoori Chicken, Paneer Butter Masala, Dal Makhani,  Garlic Naan, and Chicken Biryani. Every recipe is prepared fresh using premium ingredients and traditional Indian spices.",
+      "Whether you're trying Indian food for the first time or looking for your favorite comfort meal, Murthal Dhaba offers an unforgettable dining experience with authentic flavors and warm hospitality.",
     ],
-    tags: ["Food", "Lunch", "Dinner"],
+    tags: ["Indian Food", "Calgary", "North Indian Cuisine", "Murthal Dhaba"],
   },
   {
     id: 3,
-    slug: "great-food-more-enjoyable-party",
-    image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 7, 2023",
-    author: "David",
-    title: "Great food can make your all party more enjoyable",
+    slug: "best-place-for-private-parties-and-events-in-calgary",
+    image: "/DSC02971.jpg",
+    gallery: ["/insta/DSC03063.webp", "/insta/DSC02146.webp"],
+    date: "July 15, 2026",
+    author: "Murthal Dhaba",
+    title: "Looking for the Perfect Venue for Parties and Events in Calgary?",
     category: "Events",
     excerpt:
-      "Whether it's a birthday, an anniversary or a get together with friends, great food is what people remember the most.",
+      "Celebrate birthdays, anniversaries, corporate gatherings, and family events at Murthal Dhaba with authentic Indian food, exceptional service, and a vibrant atmosphere.",
     content: [
-      "Whether it's a birthday, an anniversary or a get together with friends, great food is what people remember the most. Our event menus are crafted to bring people together, with sharing platters, live counters and desserts that keep the celebration going.",
-      "We work closely with our guests to plan a menu that fits the mood of the party, making sure every dish adds to the enjoyment of the evening.",
+      "Planning a special celebration? Murthal Dhaba is one of Calgary's favorite destinations for birthdays, anniversaries, corporate events, family gatherings, and festive celebrations.",
+      "Our experienced team helps create memorable events with customized food packages, delicious Indian cuisine, comfortable seating, and attentive service. Whether you're hosting an intimate dinner or a larger celebration, we ensure every guest enjoys an exceptional experience.",
+      "From authentic North Indian dishes to refreshing drinks and lively hospitality, Murthal Dhaba is the perfect venue for creating unforgettable memories with family, friends, and colleagues.",
     ],
-    tags: ["Events", "Dinner", "Desert"],
+    tags: ["Private Events", "Party Venue", "Calgary", "Murthal Dhaba"],
   },
   {
     id: 4,
-    slug: "convert-your-dinner-more-enjoyable",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 5, 2023",
-    author: "Smith",
-    title: "How can convert your Dinner more enjoyable and testy",
-    category: "Food Reviews",
+    slug: "why-authentic-indian-food-is-loved-around-the-world",
+    image: "/chickenCurry.webp",
+    gallery: ["/shahiKorma.webp", "/chickenRoll.jpg"],
+    date: "July 20, 2026",
+    author: "Murthal Dhaba",
+    title: "Why Authentic Indian Cuisine Is Loved Around the World",
+    category: "Culture",
     excerpt:
-      "A few simple changes to how a table is set and paced can turn an ordinary dinner into a memorable one.",
+      "Discover what makes Indian cuisine one of the world's most celebrated culinary traditions, from bold spices and traditional recipes to unforgettable dining experiences.",
     content: [
-      "A few simple changes to how a table is set and paced can turn an ordinary dinner into a memorable one. Start with a light appetiser, let the main course breathe with the right sides, and finish with a dessert that isn't too heavy.",
-      "Our team plates every dinner course with this rhythm in mind, so the whole meal feels balanced from the first bite to the last.",
+      "Indian cuisine has earned worldwide recognition for its incredible variety of flavors, fragrant spices, and centuries-old cooking traditions. Every region of India offers unique recipes that reflect its culture and heritage.",
+      "At Murthal Dhaba, we proudly bring these authentic North Indian flavors to Calgary using fresh ingredients, handcrafted spice blends, and traditional cooking methods. Every meal is prepared with care to deliver an authentic taste of India.",
+      "Whether you're enjoying a rich curry, smoky tandoori dish, freshly baked naan, or flavorful biryani, every bite tells the story of India's culinary heritage and the warmth of its hospitality.",
     ],
-    tags: ["Dinner", "Food", "Lunch"],
-  },
-  {
-    id: 5,
-    slug: "discover-new-menu-new-chef",
-    image:
-      "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 5, 2023",
-    author: "Rose",
-    title: "Discover the new Menu with our new Chef & mistry test",
-    category: "Recipes",
-    excerpt:
-      "Our new chef brings years of experience and a fresh set of recipes that we can't wait for you to try.",
-    content: [
-      "Our new chef brings years of experience and a fresh set of recipes that we can't wait for you to try. Every dish on the new menu has been tested and refined in our kitchen before it reaches your table.",
-      "Expect bold flavours, thoughtful plating and a few signature dishes that will soon become guest favourites.",
-    ],
-    tags: ["Lunch", "Dinner", "Food"],
-  },
-  {
-    id: 6,
-    slug: "new-year-celebration-events",
-    image:
-      "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 4, 2023",
-    author: "David",
-    title: "Details about our all Events for New Year celebration",
-    category: "Events",
-    excerpt:
-      "This New Year, we are hosting a full evening of live music, festive menus and a countdown to remember.",
-    content: [
-      "This New Year, we are hosting a full evening of live music, festive menus and a countdown to remember. Doors open early with a welcome drink, followed by a curated multi course dinner.",
-      "Reservations are limited, so make sure to book your table in advance to be part of the celebration.",
-    ],
-    tags: ["Events", "Desert", "Dinner"],
-  },
-  {
-    id: 7,
-    slug: "secret-to-perfectly-grilled-steaks",
-    image:
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "November 2, 2023",
-    author: "Rose",
-    title: "The secret to perfectly grilled steaks every time",
-    category: "Recipes",
-    excerpt:
-      "Getting a steak right every time comes down to the cut, the resting time and the heat of the grill.",
-    content: [
-      "Getting a steak right every time comes down to the cut, the resting time and the heat of the grill. Our chefs rest every cut before it goes on, and again before it reaches the table, locking in the juices.",
-      "Paired with the right sides and a simple sauce, it's a dish that never goes out of style on our menu.",
-    ],
-    tags: ["Dinner", "Food", "Lunch"],
-  },
-  {
-    id: 8,
-    slug: "seasonal-ingredients-make-difference",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "October 28, 2023",
-    author: "Smith",
-    title: "Why our seasonal ingredients make the difference",
-    category: "Food Story",
-    excerpt:
-      "Seasonal produce is picked at its peak, meaning better flavour, better texture and a menu that keeps evolving.",
-    content: [
-      "Seasonal produce is picked at its peak, meaning better flavour, better texture and a menu that keeps evolving through the year. We change parts of our menu with the seasons to make the most of what's fresh.",
-      "It also means supporting local farms and reducing the distance our ingredients travel before they reach your plate.",
-    ],
-    tags: ["Food", "Lunch", "Desert"],
-  },
-  {
-    id: 9,
-    slug: "behind-the-scenes-busy-kitchen",
-    image:
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80",
-    ],
-    date: "October 25, 2023",
-    author: "David",
-    title: "A behind the scenes look at our busy kitchen",
-    category: "Food Festivals",
-    excerpt:
-      "Ever wondered what happens behind the pass during a busy service? Here's a look inside our kitchen.",
-    content: [
-      "Ever wondered what happens behind the pass during a busy service? Every station works in sync, from prep to grill to plating, so that each dish leaves the kitchen exactly on time and exactly as it should look.",
-      "It takes a coordinated team and a lot of practice, and it's something our chefs take real pride in every single night.",
-    ],
-    tags: ["Food", "Dinner", "Lunch"],
+    tags: ["Indian Cuisine", "Indian Food", "Calgary", "Murthal Dhaba"],
   },
 ];
 

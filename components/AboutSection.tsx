@@ -25,7 +25,7 @@ export function AboutSection() {
           className="w-full max-w-3xl   pl-6 pr-6 md:pl-16 md:pr-16 lg:pr-24 py-24 flex flex-col relative"
         >
           <span className="font-allura text-brand text-3xl md:text-4xl mb-4 block">
-            Quality & Balance
+            Murthal Dhaba
           </span>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-10 max-w-sm lg:max-w-md relative z-10">
             Authentic Indian

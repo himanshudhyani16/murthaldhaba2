@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { PageHeader } from "@/components/PageHeader";
 import { BlogSidebar } from "@/components/blog/BlogSidebar";
 import { blogData } from "@/data/blog";
+import { BlogHeader } from "@/components/blog/BlogHeader";
 
 export function generateStaticParams() {
   return blogData.map((post) => ({ slug: post.slug }));
@@ -38,7 +38,7 @@ export default async function BlogDetailPage({
 
   return (
     <>
-      <PageHeader title={post.title} breadcrumb="BLOG DETAIL" />
+      <BlogHeader title={post.title} breadcrumb="BLOG DETAIL" />
 
       <section className="relative w-full py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
@@ -81,10 +81,10 @@ export default async function BlogDetailPage({
 
             {post.gallery && post.gallery.length > 0 && (
               <>
-                <h3 className="flex items-center gap-2 text-white text-lg font-semibold mt-4 mb-6">
+                {/* <h3 className="flex items-center gap-2 text-white text-lg font-semibold mt-4 mb-6">
                   <span className="w-2 h-2 rounded-full bg-brand" />
                   New Test of Sushi
-                </h3>
+                </h3> */}
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   {post.gallery.map((img, idx) => (
                     <div
@@ -106,11 +106,12 @@ export default async function BlogDetailPage({
 
             <div className="flex flex-wrap items-center justify-between gap-6 pt-8 mt-4 border-t border-white/10">
               <div className="flex items-center gap-2 text-sm">
-                <span className="text-white/60">Tags:</span>
+                {/* <span className="text-white/60">Tags:</span> */}
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-white/80 hover:text-brand transition-colors cursor-pointer"
+                    className="text-white/80   "
+                    // className="text-white/80 hover:text-brand transition-colors cursor-pointer"
                   >
                     {tag}
                   </span>

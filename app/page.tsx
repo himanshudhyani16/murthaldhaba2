@@ -14,6 +14,7 @@ import { BlogSection } from "../components/BlogSection";
 import { EventBookingSection2 } from "../components/EventBookingSection2";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import HeroSection from "@/components/HeroSection";
+import SpecialOfferModal from "@/components/modal/SpecialOfferModal";
 
 export default function Home() {
   const HERO_IMAGES = [
@@ -25,7 +26,7 @@ export default function Home() {
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
-  // const [isOfferModalOpen, setIsOfferModalOpen] = useState(false);
+  const [isSpecialOfferModalOpen, setIsSpecialOfferModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,9 +36,21 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const specialOfferModalTimer = window.setTimeout(() => {
+      setIsSpecialOfferModalOpen(true);
+    }, 3000);
+
+    return () => window.clearTimeout(specialOfferModalTimer);
+  }, []);
+
   return (
     <>
       <div className="relative min-h-screen font-sans selection:bg-brand selection:text-white">
+        <SpecialOfferModal
+          open={isSpecialOfferModalOpen}
+          onClose={() => setIsSpecialOfferModalOpen(false)}
+        />
         <div className="bg-texture" />
         <div className="flex flex-col w-full h-full relative z-10">
           <HeroSection

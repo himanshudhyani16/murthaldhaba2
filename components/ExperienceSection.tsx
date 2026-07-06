@@ -3,20 +3,20 @@ import { motion } from "motion/react";
 
 const features = [
   {
-    title: "Passionate Chef",
-    desc: "Murthal Dhaba is one of the most popular Restaurant & Special menu made by our passionate chefs and quality with can impress you",
+    title: "Authentic North Indian Cuisine",
+    desc: "Discover the rich flavors of authentic Indian food in Calgary, featuring freshly prepared curries, sizzling tandoori specialties, handcrafted naan, aromatic biryanis, and traditional North Indian recipes made with premium ingredients and authentic spices.",
   },
   {
-    title: "100% Fresh Food",
-    desc: "Murthal Dhaba is one of the most popular Restaurant & Special menu made by our passionate chefs and quality with can impress you",
+    title: "Events & Celebrations",
+    desc: "Looking for the perfect event venue in Calgary? Murthal Dhaba hosts birthdays, anniversaries, corporate events, family gatherings, festive celebrations, and private parties with customized menus, exceptional service, and a vibrant atmosphere.",
   },
   {
-    title: "Memorable Ambience",
-    desc: "Murthal Dhaba is one of the most popular Restaurant & Special menu made by our passionate chefs and quality with can impress you",
+    title: "Culture & Community",
+    desc: "Experience the warmth of Indian hospitality through cultural celebrations, festive events, live entertainment, and community gatherings that bring friends and families together in a welcoming environment.",
   },
   {
-    title: "Special Dish for Occasion's",
-    desc: "Murthal Dhaba is one of the most popular Restaurant & Special menu made by our passionate chefs and quality with can impress you",
+    title: "Pet-Friendly Patio Dining",
+    desc: "Relax on our spacious pet-friendly patio in Calgary, where you can enjoy authentic Indian cuisine with family, friends, and your furry companions in a comfortable outdoor setting.",
   },
 ];
 
@@ -97,7 +97,7 @@ export function ExperienceSection() {
       {/* Right Image Area */}
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative order-1 lg:order-2 z-10">
         <img
-          src="/insta/DSC02108.webp"
+          src="/insta/DSC02046.webp"
           alt="Chef preparing food"
           className="absolute inset-0 w-full h-full object-cover"
         />
