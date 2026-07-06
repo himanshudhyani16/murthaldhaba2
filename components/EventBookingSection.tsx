@@ -131,16 +131,18 @@ export function EventBookingSection() {
             </div>
           </motion.div>
 
-          <motion.div
+          <motion.a
+            href="/contact"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
+            className="cursor-pointer"
           >
-            <button className="mt-12 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
+            <button className=" cursor-pointer mt-12 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
               Book Early
             </button>
-          </motion.div>
+          </motion.a>
         </div>
       </div>
     </section>
