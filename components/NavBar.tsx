@@ -67,9 +67,13 @@ export function NavBar() {
           </Link>
         ))}
       </motion.div>
-      <button className="mt-4 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300">
-     FIND A TABLE
-      </button>
+      <Link
+        href="https://www.doordash.com/store/murthal-dhaba-calgary-40232809/94069554/?rwg_token=AE37R_gyoGfYEfacxrL3MkZcvgsGtLHNXlp-P7pqN23fqYcEfk4aF3ZBH2M6jVltLm8dh-mMLvMM4ECEcJxYxkdct7qUVupYnQ==&utm_campaign=gpa"
+       target="_blank"
+        className="hidden lg:block mt-4 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300"
+      >
+        ORDER NOW
+      </Link>
       {/* Mobile Menu Toggle */}
       <div
         className="lg:hidden text-white cursor-pointer relative z-50 p-2"

@@ -21,7 +21,7 @@ export function Footer() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 flex flex-col">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           {/* Column 1 */}
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
@@ -144,6 +144,22 @@ export function Footer() {
                   +1 403-454-3750
                 </a>
               </p>
+            </div>
+          </div>
+          {/* Column 5 */}
+          <div className="flex flex-col">
+            <h3 className="text-white text-xl font-medium mb-8">
+              Opening Hours
+            </h3>
+            <div className="flex flex-col gap-5">
+              <div className="flex items-center  gap-4 text-gray-200 text-sm font-medium tracking-wide">
+                <span>Mon - Sat:</span>
+                <span>11 AM - 11 PM</span>
+              </div>
+              <div className="flex items-center  gap-4 text-gray-200 text-sm font-medium tracking-wide">
+                <span>Sun:</span>
+                <span>2 PM - 9 PM</span>
+              </div>
             </div>
           </div>
         </div>

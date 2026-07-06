@@ -23,7 +23,7 @@ export function PageHeader({ title, breadcrumb }: PageHeaderProps) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center mt-16 px-4">
+      <div className="relative z-10 text-center mt-30 md:mt-16 px-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

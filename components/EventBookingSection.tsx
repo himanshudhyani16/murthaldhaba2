@@ -15,7 +15,8 @@ export function EventBookingSection() {
           className="col-span-1 row-span-2 relative"
         >
           <Image
-            src="/insta/bcx3r8sptnjpraqbje4e.webp"
+            src="/insta/DSC03063.webp"
+            // src="/insta/bcx3r8sptnjpraqbje4e.webp"
             alt="Dining experience"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -122,15 +123,11 @@ export function EventBookingSection() {
 
             <div className="flex items-center justify-between text-white font-light text-[15px]">
               <span>Monday - Saturday</span>
-              <span>7.30 am - 11.30 pm</span>
+              <span>11 AM - 11 PM</span>
             </div>
             <div className="flex items-center justify-between text-white font-light text-[15px]">
               <span>Sunday</span>
-              <span>7.30 am - 11.30 pm</span>
-            </div>
-            <div className="flex items-center justify-between text-brand font-medium text-[15px]">
-              <span>Happy Hour</span>
-              <span>5.30 pm - 09.00 pm</span>
+              <span>2 PM - 9 PM</span>
             </div>
           </motion.div>
 

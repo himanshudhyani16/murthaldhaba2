@@ -42,7 +42,7 @@ export function EventBookingSection2() {
           className="col-span-1 row-span-1 relative"
         >
           <img
-            src="/club2.jpg"
+            src="/DSC02146.jpg"
             alt="Our Chef"
             className="absolute inset-0 w-full h-full object-cover object-top"
           />
@@ -112,15 +112,11 @@ export function EventBookingSection2() {
 
             <div className="flex items-center justify-between text-white font-light text-[15px]">
               <span>Monday - Saturday</span>
-              <span>7.30 am - 11.30 pm</span>
+              <span>11 AM - 11 PM</span>
             </div>
             <div className="flex items-center justify-between text-white font-light text-[15px]">
               <span>Sunday</span>
-              <span>7.30 am - 11.30 pm</span>
-            </div>
-            <div className="flex items-center justify-between text-brand font-medium text-[15px]">
-              <span>Happy Hour</span>
-              <span>5.30 pm - 09.00 pm</span>
+              <span>2 PM - 9 PM</span>
             </div>
           </motion.div>
 

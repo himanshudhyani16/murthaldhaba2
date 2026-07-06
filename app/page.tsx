@@ -18,7 +18,6 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
   const HERO_IMAGES = [
     "/patio1.jpeg",
-    "/patio2.jpeg",
     "/DSC03063.jpg",
     "/insta/DSC03107.webp",
     "/insta/DSC02110.webp",
@@ -48,7 +47,7 @@ export default function Home() {
           {/* <Hero /> */}
           <AboutSection />
           {/* <UpcomingEvents /> */}
-          <EventBookingSection2 />
+          {/* <EventBookingSection2 /> */}
           <VibeSection />
           <MenuSection />
           <GallerySection />

@@ -9,7 +9,7 @@ export function AboutSection() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
           <img
-            src="/restaurant4.jpg"
+            src="/restaurant1.jpg"
             alt="Background food"
             // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
             className="w-full h-full object-cover opacity-10 mix-blend-luminosity"

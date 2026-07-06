@@ -125,8 +125,8 @@ export function ContactInformation() {
           className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] rounded-sm overflow-hidden group"
         >
           <img
-            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80"
-            alt="Chef presenting a dish"
+            src="/patio1.jpeg"
+            alt="murthal dhaba"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
 
@@ -136,13 +136,13 @@ export function ContactInformation() {
           {/* Overlay Content */}
           <div className="absolute inset-0 flex flex-col justify-between p-10">
             {/* Top text */}
-            <div className="mt-20">
+            {/* <div className="mt-20">
               <h3 className="text-white text-3xl md:text-4xl tracking-[0.15em] font-light leading-tight">
                 35% OFF
                 <br />
                 FOR ALL MENU
               </h3>
-            </div>
+            </div> */}
 
             {/* Bottom text */}
             {/* <div className="mb-6">

@@ -8,8 +8,8 @@ import { RiTiktokLine } from "react-icons/ri";
 
 export function TopBar() {
   return (
-    <div className="w-full flex items-center justify-between py-3 px-6 md:px-16 text-sm text-gray-300 font-light border-b border-white/5 relative z-10 w-full container mx-auto">
-      <div className="flex gap-4 items-center">
+    <div className="w-full flex flex-col gap-3 md:flex-row md:items-center md:justify-between py-3 px-6 md:px-16 text-sm text-gray-300 font-light border-b border-white/5 relative z-10 container mx-auto">
+      <div className="flex flex-col items-center gap-2 text-center md:flex-row md:items-center md:gap-4 md:text-left">
         <a
           href="https://maps.app.goo.gl/Ws6EQZR1bEnSyWeb6"
           target="_blank"
@@ -18,7 +18,7 @@ export function TopBar() {
         >
           619 A 36 Ave NE, Calgary, AB T2E 2L8, Canada
         </a>
-        <span className="text-gray-600">|</span>
+        <span className="hidden text-gray-600 md:inline">|</span>
         <a
           href="tel:+12049515359"
           className="hover:text-white transition-colors cursor-pointer"
@@ -31,14 +31,14 @@ export function TopBar() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="flex items-center gap-2 group cursor-pointer"
+        className=" items-center gap-2 group cursor-pointer hidden lg:flex"
       >
         <div className="flex items-center gap-2 ">
           {/* <Mail className="w-4 h-4 text-brand group-hover:animate-bounce" /> */}
           <span className="hidden sm:inline">murthal.dhaba36@gmail.com</span>
         </div>
         <span className="text-gray-600">|</span>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 ">
           <Link
             href="https://www.facebook.com/Murthaldhaba36?rdid=OQBbXefiaaDL7vFq&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E38wqrPp6%2F#"
             target="_blank"
