@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ContactInformation() {
   return (
@@ -46,11 +47,15 @@ export function ContactInformation() {
                   Visit our Office
                 </h3>
               </div>
-              <p className="text-gray-400 font-light pl-5.5 leading-relaxed">
+              <Link
+                href="https://maps.app.goo.gl/jS31T8fvdijN1Bat6"
+                target="_blank"
+                className="text-gray-400 font-light pl-5.5 leading-relaxed hover:text-brand transition-colors "
+              >
                 619 A 36 Ave NE, Calgary,
                 <br />
                 AB T2E 2L8, Canada
-              </p>
+              </Link>
             </div>
 
             {/* Email */}
@@ -108,9 +113,9 @@ export function ContactInformation() {
                 </h3>
               </div>
               <p className="text-gray-400 font-light pl-5.5 leading-relaxed">
-                Mon - Sun: 8:00 AM - 10:00 PM
+                Mon - Sat: 11:00 AM - 11:00 PM
                 <br />
-                (Open All Days)
+                Sun: 2 PM - 9 PM
               </p>
             </div>
           </div>

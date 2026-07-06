@@ -118,9 +118,13 @@ export function Footer() {
               Contact info
             </h3>
             <div className="flex flex-col gap-6">
-              <address className="not-italic text-gray-200 text-sm font-medium leading-[1.8] tracking-wide">
+              <Link
+                href="https://maps.app.goo.gl/jS31T8fvdijN1Bat6"
+                target="_blank"
+                className="not-italic text-gray-200 text-sm font-medium leading-[1.8] tracking-wide hover:text-brand transition-colors"
+              >
                 619 A 36 Ave NE, Calgary, <br /> AB T2E 2L8, Canada
-              </address>
+              </Link>
 
               <div className="flex flex-col gap-2 text-gray-200 text-sm font-medium tracking-wide">
                 <a
