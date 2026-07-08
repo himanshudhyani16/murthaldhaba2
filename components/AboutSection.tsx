@@ -102,7 +102,7 @@ export function AboutSection() {
       {/* Right Image Area */}
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative order-2 lg:order-1 z-10">
         <img
-          src="/patio1.jpeg"
+          src="/foodtable.jpg"
           alt="Chef preparing food"
           className="absolute inset-0 w-full h-full object-cover"
         />
