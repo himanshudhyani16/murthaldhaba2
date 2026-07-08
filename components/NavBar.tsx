@@ -71,7 +71,8 @@ export function NavBar() {
           <Link
             key={link.name}
             href={link.href}
-            className={`flex items-center gap-1 text-xl font-medium transition-colors group ${
+            // font-samarkan
+            className={`flex items-center gap-1 text-xl font-bold transition-colors group  tracking-wider ${
               isActiveLink(link.href)
                 ? "text-brand [text-shadow:0_0_12px_rgba(217,119,6,0.65)]"
                 : "text-white hover:text-brand"
@@ -136,9 +137,9 @@ export function NavBar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-3xl font-medium transition-colors ${
+                  className={`text-3xl font-medium transition-colors font-samarkan tracking-wider ${
                     isActiveLink(link.href)
-                      ? "text-brand [text-shadow:0_0_12px_rgba(217,119,6,0.65)]"
+                      ? "text-brand [text-shadow:2px_2px_0_#A3141B,_4px_4px_0_#000]"
                       : "text-gray-200 hover:text-brand"
                   }`}
                   aria-current={isActiveLink(link.href) ? "page" : undefined}

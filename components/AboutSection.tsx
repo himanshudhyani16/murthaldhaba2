@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -9,10 +10,11 @@ export function AboutSection() {
       <div className="w-full lg:w-1/2 flex lg:justify-end order-1 lg:order-2 relative z-20">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
-          <img
+          <Image
             src="/restaurant1.jpg"
             alt="Background food"
-            // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
@@ -101,9 +103,11 @@ export function AboutSection() {
 
       {/* Right Image Area */}
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative order-2 lg:order-1 z-10">
-        <img
+        <Image
           src="/foodtable.jpg"
           alt="Chef preparing food"
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Optional gradient overlay to blend left edge with the background */}

@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Outfit:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Samarkan';
+  src: url('/fonts/samarkan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-allura: "Allura", cursive;
+  --font-samarkan: "Samarkan", sans-serif;
   --color-brand: #d7854d;
   --color-brand-dark: #c06932;
   --color-bg-deep: #2e0909;

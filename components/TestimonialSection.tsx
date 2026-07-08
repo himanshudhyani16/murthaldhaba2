@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useRef, useEffect, useCallback } from "react";
+import Image from "next/image";
 
 export function TestimonialSection() {
   const testimonials = [
@@ -123,10 +124,11 @@ export function TestimonialSection() {
       <div className="py-24 px-6 md:px-16 max-w-7xl mx-auto z-10 flex flex-col items-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
-          <img
+          <Image
             src="/club.jpg"
             alt="Background food"
-            // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
+            fill
+            sizes="100vw"
             className="w-full h-full object-cover opacity-20 "
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
@@ -186,10 +188,12 @@ export function TestimonialSection() {
                 transition={{ delay: 0.2 + (idx % 2) * 0.1 }}
                 className="flex-none snap-start relative bg-[var(--color-bg-darker)] border border-white/5 rounded-sm overflow-hidden flex min-h-[320px] lg:min-h-[350px] w-full lg:w-[calc(50%-1rem)]"
               >
-                <div className="  w-44 h-full md:w-[60%] md:h-full  border border-white/10 p-2 lg:p-2.5">
-                  <img
+                <div className="relative w-44 h-full md:w-[60%] md:h-full border border-white/10 p-2 lg:p-2.5">
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    fill
+                    sizes="(max-width: 1024px) 176px, 30vw"
                     className="w-full h-full object-cover  pointer-events-none"
                   />
                 </div>

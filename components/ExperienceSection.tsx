@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const features = [
   {
@@ -12,7 +13,7 @@ const features = [
   },
   {
     title: "Culture & Community",
-    desc: "Live music nights, festival specials, and a space where the whole community, old friends and new comes together like one big family.",
+    desc: "Live music nights, festival specials, and a space where the community, old friends and new, comes together like one big family.",
   },
   {
     title: "Pet-Friendly Patio Dining",
@@ -27,10 +28,11 @@ export function ExperienceSection() {
       <div className="w-full lg:w-1/2 flex lg:justify-end order-2 lg:order-1 relative z-20">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
-          <img
+          <Image
             src="/restaurant1.jpg"
             alt="Background food"
-            // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
@@ -96,9 +98,11 @@ export function ExperienceSection() {
 
       {/* Right Image Area */}
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-full relative order-1 lg:order-2 z-10">
-        <img
+        <Image
           src="/insta/DSC02046.webp"
           alt="Chef preparing food"
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Optional gradient overlay to blend left edge with the background */}

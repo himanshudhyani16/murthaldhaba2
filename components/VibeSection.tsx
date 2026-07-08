@@ -2,6 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const videos = [
   {
@@ -83,10 +84,11 @@ export function VibeSection() {
     <section className="relative w-full  z-10 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0 bg-[var(--color-bg-darker)]">
-        <img
+        <Image
           src="/club.jpg"
           alt="Background food"
-          // className="w-full h-full object-cover opacity-10 mix-blend-luminosity"
+          fill
+          sizes="100vw"
           className="w-full h-full object-cover opacity-20 "
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg-darker)] via-black/40 to-[var(--color-bg-darker)] opacity-80" />
@@ -121,9 +123,9 @@ export function VibeSection() {
             className="text-gray-400 text-lg font-light max-w-2xl"
           >
             At Murthal Dhaba you just have good food, loud laughter, chai on
-            tap, and a room full of people who get it. Whether it's a Friday
+            tap, and a room full of people who get it. Whether it&apos;s a Friday
             night with friends or a Sunday family lunch, Murthal Dhaba feels
-            like the get-together you didn't know you were missing.
+            like the get-together you didn&apos;t know you were missing.
           </motion.p>
         </div>
 

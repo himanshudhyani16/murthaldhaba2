@@ -45,12 +45,12 @@ export default function HeroSection({
             >
               FOOD FROM <br />
               <span
-                className="text-[#660109]"
-                style={{ textShadow: "2px 2px 0 #A3141B, 4px 4px 0 #000" }}
+                className="text-[#ff686d]"
+                style={{ textShadow: "2px 2px 0 #A3141B, 4px 4px 0 #fff" }}
               >
-                दिल
+                दिल.
               </span>
-              . MADE <br />
+               MADE <br />
               WITH LOVE.
               {/* Two Decades of <br />  */}
               {/* Flavor, Culture
