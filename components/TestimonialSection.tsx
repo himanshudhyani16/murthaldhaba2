@@ -35,7 +35,7 @@ export function TestimonialSection() {
         "A truly extraordinary dining experience! The chef's special was a masterpiece, perfectly timed and executed with fresh ingredients.",
       name: "Sophia Martinez",
       role: "Local Guide",
-      image: "/insta/DSC02099_compressed.webp",
+      image: "/insta/DSC02088_compressed.webp",
     },
     {
       id: 5,
@@ -186,7 +186,7 @@ export function TestimonialSection() {
                 transition={{ delay: 0.2 + (idx % 2) * 0.1 }}
                 className="flex-none snap-start relative bg-[var(--color-bg-darker)] border border-white/5 rounded-sm overflow-hidden flex min-h-[320px] lg:min-h-[350px] w-full lg:w-[calc(50%-1rem)]"
               >
-                <div className="  w-44 h-44 md:w-[60%] md:h-full  border border-white/10 p-2 lg:p-2.5">
+                <div className="  w-44 h-full md:w-[60%] md:h-full  border border-white/10 p-2 lg:p-2.5">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
