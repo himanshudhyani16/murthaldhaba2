@@ -28,12 +28,32 @@ export function AboutSection() {
           <span className="font-allura text-brand text-3xl md:text-4xl mb-4 block">
             Murthal Dhaba
           </span>
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-10 max-w-sm lg:max-w-md relative z-10">
+          {/* <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-10 max-w-sm lg:max-w-md relative z-10">
             Authentic Indian
             <br />
             <span className="relative">
               Flavors
-              {/* Custom SVG underline */}
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                viewBox="0 0 200 12"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M5 10 Q 100 0 195 10"
+                  className="stroke-brand"
+                  strokeWidth="3"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </span>
+            in Calgary
+          </h2> */}
+          <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-10 max-w-sm lg:max-w-md relative z-10">
+            घर जैसा खाना,
+            <br />
+            <span className="relative">
+              Calgary
               <svg
                 className="absolute -bottom-2 left-0 w-full"
                 viewBox="0 0 200 12"
@@ -48,21 +68,21 @@ export function AboutSection() {
                 />
               </svg>
             </span>{" "}
-            in Calgary
+            में
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 shrink-0"></div>
           <div className="w-full  flex flex-col items-start gap-6">
             <p className="text-gray-300 text-lg font-light leading-relaxed max-w-lg">
-              Experience the rich taste of North India with freshly prepared
-              dishes, traditional recipes, and warm hospitality. From sizzling
-              tandoori specialties to comforting curries, every meal at Murthal
-              Dhaba is crafted to bring people together.
+              Missing the taste of home? Murthal Dhaba brings you real North
+              Indian flavors, the kind you grew up on. Sizzling tandoori,
+              slow-cooked curries, fresh-rolled parathas, and that one bite that
+              takes you straight back home.
             </p>
 
             <div className="flex items-center text-white text-xl font-medium mt-2">
               Call for Reservation
               <a
-                href="tel:+01234567891"
+                href="tel: +1 204-951-5359"
                 className="text-brand border-b border-brand pb-0.5 ml-3 hover:text-brand-dark hover:border-brand-dark transition-colors"
               >
                 +1 204-951-5359

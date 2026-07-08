@@ -23,6 +23,7 @@ export default function Home() {
     "/insta/DSC03107.webp",
     "/insta/DSC02110.webp",
     "/insta/DSC02108.webp",
+    "/insta/DSC02063_compressed.webp",
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);

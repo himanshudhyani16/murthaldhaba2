@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
 const links = [
@@ -15,6 +16,15 @@ const links = [
 
 export function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActiveLink = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
@@ -55,13 +65,18 @@ export function NavBar() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ staggerChildren: 0.1, delayChildren: 0.1 }}
-        className="hidden lg:flex items-center gap-10"
+        className="hidden lg:flex items-center gap-10 "
       >
         {links.map((link) => (
           <Link
             key={link.name}
             href={link.href}
-            className="flex items-center gap-1 text-base font-medium text-white hover:text-brand transition-colors group"
+            className={`flex items-center gap-1 text-xl font-medium transition-colors group ${
+              isActiveLink(link.href)
+                ? "text-brand [text-shadow:0_0_12px_rgba(217,119,6,0.65)]"
+                : "text-white hover:text-brand"
+            }`}
+            aria-current={isActiveLink(link.href) ? "page" : undefined}
           >
             {link.name}
           </Link>
@@ -69,7 +84,7 @@ export function NavBar() {
       </motion.div>
       <Link
         href="https://www.doordash.com/store/murthal-dhaba-calgary-40232809/94069554/?rwg_token=AE37R_gyoGfYEfacxrL3MkZcvgsGtLHNXlp-P7pqN23fqYcEfk4aF3ZBH2M6jVltLm8dh-mMLvMM4ECEcJxYxkdct7qUVupYnQ==&utm_campaign=gpa"
-       target="_blank"
+        target="_blank"
         className="hidden lg:block mt-4 px-10 py-3.5 rounded-none border border-white/80 text-white text-sm font-medium hover:bg-white hover:text-black transition-all duration-300"
       >
         ORDER NOW
@@ -121,7 +136,12 @@ export function NavBar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-3xl font-medium text-gray-200 hover:text-brand transition-colors"
+                  className={`text-3xl font-medium transition-colors ${
+                    isActiveLink(link.href)
+                      ? "text-brand [text-shadow:0_0_12px_rgba(217,119,6,0.65)]"
+                      : "text-gray-200 hover:text-brand"
+                  }`}
+                  aria-current={isActiveLink(link.href) ? "page" : undefined}
                 >
                   {link.name}
                 </Link>

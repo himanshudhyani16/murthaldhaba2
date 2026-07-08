@@ -4,19 +4,19 @@ import { motion } from "motion/react";
 const features = [
   {
     title: "Authentic North Indian Cuisine",
-    desc: "Discover the rich flavors of authentic Indian food in Calgary, featuring freshly prepared curries, sizzling tandoori specialties, handcrafted naan, aromatic biryanis, and traditional North Indian recipes made with premium ingredients and authentic spices.",
+    desc: "Handmade naan, aromatic biryanis, and curries cooked slowly, the same recipes and the same spices",
   },
   {
     title: "Events & Celebrations",
-    desc: "Looking for the perfect event venue in Calgary? Murthal Dhaba hosts birthdays, anniversaries, corporate events, family gatherings, festive celebrations, and private parties with customized menus, exceptional service, and a vibrant atmosphere.",
+    desc: "Birthdays, kitty parties, engagements, corporate get-togethers, Diwali and Holi celebrations, we host it all.",
   },
   {
     title: "Culture & Community",
-    desc: "Experience the warmth of Indian hospitality through cultural celebrations, festive events, live entertainment, and community gatherings that bring friends and families together in a welcoming environment.",
+    desc: "Live music nights, festival specials, and a space where the whole community, old friends and new comes together like one big family.",
   },
   {
     title: "Pet-Friendly Patio Dining",
-    desc: "Relax on our spacious pet-friendly patio in Calgary, where you can enjoy authentic Indian cuisine with family, friends, and your furry companions in a comfortable outdoor setting.",
+    desc: "Our patio is made for long evenings, bring your children, bring your dogs and everyone…",
   },
 ];
 

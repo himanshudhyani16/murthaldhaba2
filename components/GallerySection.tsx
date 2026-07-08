@@ -14,7 +14,7 @@ const images = [
   },
   {
     id: 4,
-    src: "/insta/DA256F25-03AE-4714-B231-1219C6B2D36C.webp",
+    src: "/insta/CHR04677_compressed.webp",
     colSpan: "col-span-1",
     rowSpan: "row-span-2",
   },

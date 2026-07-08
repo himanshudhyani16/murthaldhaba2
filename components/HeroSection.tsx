@@ -39,9 +39,18 @@ export default function HeroSection({
       <div className="relative z-10 flex flex-col flex-grow text-white">
         <div className="grow flex flex-col justify-center items-center text-center px-4 pt-30">
           <Reveal delay={200}>
-            <h1 className="uppercase font-semibold text-5xl md:text-7xl lg:text-8xl leading-tight mb-8">
+            <h1
+              className="uppercase font-semibold text-5xl md:text-7xl lg:text-8xl leading-tight mb-8"
+              style={{ textShadow: "2px 2px 0 #660109, 4px 4px 0 #000" }}
+            >
               FOOD FROM <br />
-              HEART. MADE <br />
+              <span
+                className="text-[#660109]"
+                style={{ textShadow: "2px 2px 0 #A3141B, 4px 4px 0 #000" }}
+              >
+                दिल
+              </span>
+              . MADE <br />
               WITH LOVE.
               {/* Two Decades of <br />  */}
               {/* Flavor, Culture

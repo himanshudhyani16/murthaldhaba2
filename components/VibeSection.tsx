@@ -109,7 +109,8 @@ export function VibeSection() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-6"
           >
-            The Vibe You&apos;ll Never Miss
+            {/* The Vibe You&apos;ll Never Miss */}
+            Where every evening feels like your own
           </motion.h2>
 
           <motion.p
@@ -119,8 +120,10 @@ export function VibeSection() {
             transition={{ delay: 0.2 }}
             className="text-gray-400 text-lg font-light max-w-2xl"
           >
-            Experience the rhythm, the flavors, and the unforgettable moments
-            that make every evening at Murthal Dhaba truly special.
+            At Murthal Dhaba you just have good food, loud laughter, chai on
+            tap, and a room full of people who get it. Whether it's a Friday
+            night with friends or a Sunday family lunch, Murthal Dhaba feels
+            like the get-together you didn't know you were missing.
           </motion.p>
         </div>
 

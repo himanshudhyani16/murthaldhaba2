@@ -11,15 +11,15 @@ export function TestimonialSection() {
         "Murthal Dhaba is one of the most popular and tasty Restaurant with unique & special test food menu made by our passionate more anchefs with love and quality and love",
       name: "Maichel Williamson",
       role: "CTO, Morlex Group",
-      image: "/user1.jpg",
+      image: "/insta/CHR04677_compressed.webp",
     },
     {
       id: 2,
       quote:
-        "Murthal Dhaba is one of the most popular and tasty Restaurant with unique & special test food menu made by our passionate more anchefs with love and quality and love",
+        "The flavours here feel authentic and memorable. From the first bite to the last, every dish was fresh, comforting, and served with genuine hospitality.",
       name: "Jenny Wilson",
       role: "CEO, TechFlow",
-      image: "/user2.jpg",
+      image: "/insta/DSC02138_compressed.webp",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export function TestimonialSection() {
         "We had a fantastic time at this place. The ambience was perfect and the food was simply outstanding. I will definitely be coming back with my family.",
       name: "Robert Fox",
       role: "Food Blogger",
-      image: "/user3.jpg",
+      image: "/insta/DSC02091_compressed.webp",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export function TestimonialSection() {
         "A truly extraordinary dining experience! The chef's special was a masterpiece, perfectly timed and executed with fresh ingredients.",
       name: "Sophia Martinez",
       role: "Local Guide",
-      image: "/user4.jpg",
+      image: "/insta/DSC02099_compressed.webp",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ export function TestimonialSection() {
         "The best place to spend an evening. The staff is polite, the atmosphere is cozy, and the menu brings a unique touch to traditional dishes.",
       name: "Daniel Lee",
       role: "Creative Director",
-      image: "/user5.jpg",
+      image: "/insta/DSC02097_compressed.webp",
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ export function TestimonialSection() {
         "I hosted my birthday dinner here and the team made it incredibly special. Thank you for the wonderful memories and delicious treats!",
       name: "Emily Chen",
       role: "Entrepreneur",
-      image: "/user6.jpg",
+      image: "/insta/DSC02121_compressed.webp",
     },
   ];
 
@@ -147,7 +147,7 @@ export function TestimonialSection() {
           transition={{ delay: 0.1 }}
           className="text-4xl md:text-5xl font-semibold leading-tight text-white mb-16 text-center relative z-10 "
         >
-       Our Happy Customers
+          Our Happy Customers
         </motion.h2>
 
         <div
@@ -184,20 +184,19 @@ export function TestimonialSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 + (idx % 2) * 0.1 }}
-                className="flex-none snap-start relative bg-[var(--color-bg-darker)] border border-white/5 p-8 md:p-10 lg:p-12 rounded-sm overflow-hidden flex min-h-[320px] lg:min-h-[350px] w-full lg:w-[calc(50%-1rem)]"
+                className="flex-none snap-start relative bg-[var(--color-bg-darker)] border border-white/5 rounded-sm overflow-hidden flex min-h-[320px] lg:min-h-[350px] w-full lg:w-[calc(50%-1rem)]"
               >
-                <div className="w-[85%] md:w-[70%] flex flex-col justify-between z-10 h-full relative">
+                <div className="  w-44 h-44 md:w-[60%] md:h-full  border border-white/10 p-2 lg:p-2.5">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover  pointer-events-none"
+                  />
+                </div>
+                <div className="w-[85%] md:w-[70%] flex flex-col align-middle justify-center z-10 h-full relative p-8 md:p-10 lg:p-12 ">
                   <p className="text-gray-300 text-[15px] lg:text-[16px] leading-relaxed mb-10 font-light pr-4">
                     {testimonial.quote}
                   </p>
-                  <div>
-                    <h4 className="text-brand font-medium text-lg">
-                      {testimonial.name}
-                    </h4>
-                    {/* <p className="text-gray-400 text-xs mt-1">
-                      {testimonial.role}
-                    </p> */}
-                  </div>
                 </div>
 
                 <Quote
@@ -205,14 +204,14 @@ export function TestimonialSection() {
                   fill="none"
                   strokeWidth={1}
                 />
-
+                {/* 
                 <div className="absolute -bottom-8 -right-8 md:-bottom-10 md:-right-10 w-44 h-44 md:w-56 md:h-56 rounded-full border border-white/10 p-2 lg:p-2.5">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-full h-full object-cover rounded-full pointer-events-none"
                   />
-                </div>
+                </div> */}
               </motion.div>
             ))}
           </div>
