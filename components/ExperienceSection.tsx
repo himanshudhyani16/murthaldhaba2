@@ -43,6 +43,8 @@ export function ExperienceSection() {
             Quality & Balance
           </span>
           <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white tracking-wide mb-24 max-w-sm lg:max-w-md relative z-10">
+           {/* An Extraordinary Experience at the best Indian restaurant in Calgary */}
+           
             An Extraordinary <br />
             <span className="relative">
               Experience
