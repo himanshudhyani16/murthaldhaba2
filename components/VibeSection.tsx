@@ -124,7 +124,7 @@ export function VibeSection() {
           >
             At Murthal Dhaba you'll find good food, loud laughter, chai on tap,
             and a room full of people who get it. Whether it's a Friday night
-            with friends or a Sunday family lunch, Murthal Dhaba feels like the
+            with friends or a Sunday special lunch, Murthal Dhaba feels like the
             get-together you didn't know you were missing. It's no surprise many
             locals consider it the best Indian restaurant in Calgary, right here
             in NE Calgary.
