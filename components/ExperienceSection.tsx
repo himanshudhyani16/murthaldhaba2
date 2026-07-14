@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const features = [
   {
-    title: "Authentic North Indian Cuisine",
-    desc: "Handmade naan, aromatic biryanis, and curries cooked slowly, the same recipes and the same spices",
+    title: "Authentic North Indian Flavour",
+    desc: "Handmade parathas in calgary, aromatic biryanis, and curries cooked slowly, the same recipes and the same spices.",
   },
   {
     title: "Events & Celebrations",
@@ -13,11 +13,11 @@ const features = [
   },
   {
     title: "Culture & Community",
-    desc: "Live music nights, festival specials, and a space where the community, old friends and new, comes together like one big family.",
+    desc: "Live music nights, festival specials, and a space where the whole community, old friends and new comes together like one big family.",
   },
   {
     title: "Pet-Friendly Patio Dining",
-    desc: "Our patio is made for long evenings, bring your children, bring your dogs and everyone…",
+    desc: "Our patio is built for long evenings out,  good food, great company, and open air.",
   },
 ];
 

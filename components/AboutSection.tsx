@@ -75,10 +75,11 @@ export function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 shrink-0"></div>
           <div className="w-full  flex flex-col items-start gap-6">
             <p className="text-gray-300 text-lg font-light leading-relaxed max-w-lg">
-              Missing the taste of home? Murthal Dhaba brings you real North
-              Indian flavors, the kind you grew up on. Sizzling tandoori,
-              slow-cooked curries, fresh-rolled parathas, and that one bite that
-              takes you straight back home.
+              Missing the taste of home? Murthal Dhaba is Calgary&apos;s own North
+              Indian dhaba, serving real Punjabi flavors the kind you grew up
+              on. Sizzling tandoori, slow-cooked curries, fresh-rolled parathas,
+              and that one bite that takes you straight back home. Proudly
+              serving NE Calgary with authentic North Indian cuisine.
             </p>
 
             <div className="flex items-center text-white text-xl font-medium mt-2">

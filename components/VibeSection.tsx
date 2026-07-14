@@ -122,10 +122,12 @@ export function VibeSection() {
             transition={{ delay: 0.2 }}
             className="text-gray-400 text-lg font-light max-w-2xl"
           >
-            At Murthal Dhaba you just have good food, loud laughter, chai on
-            tap, and a room full of people who get it. Whether it&apos;s a Friday
-            night with friends or a Sunday family lunch, Murthal Dhaba feels
-            like the get-together you didn&apos;t know you were missing.
+            At Murthal Dhaba you'll find good food, loud laughter, chai on tap,
+            and a room full of people who get it. Whether it's a Friday night
+            with friends or a Sunday family lunch, Murthal Dhaba feels like the
+            get-together you didn't know you were missing. It's no surprise many
+            locals consider it the best Indian restaurant in Calgary, right here
+            in NE Calgary.
           </motion.p>
         </div>
 
