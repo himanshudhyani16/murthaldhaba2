@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const categories = ["Veg", "NonVeg", "Paratha", "Rolls"] as const;
+const categories = ["Paratha", "Veg", "NonVeg", "Rolls"] as const;
 type Category = (typeof categories)[number];
 
 interface MenuItem {
@@ -14,11 +14,39 @@ interface MenuItem {
 }
 
 const menuData: Record<Category, MenuItem[]> = {
+  Paratha: [
+    {
+      name: "Aloo Paratha",
+      price: "$3.99",
+      description:
+        "Flaky whole wheat flatbread stuffed with spiced mashed potatoes",
+    },
+    {
+      name: "Paneer Paratha",
+      price: "$6.99",
+      description: "Flatbread stuffed with spiced grated cottage cheese",
+    },
+    {
+      name: "Gobi Paratha",
+      price: "$4.99",
+      description: "Flatbread stuffed with savory spiced cauliflower",
+    },
+    {
+      name: "Egg Paratha",
+      price: "$6.99",
+      description: "A tasty layered flatbread cooked with a spiced egg mixture",
+    },
+    {
+      name: "Keema Paratha",
+      price: "$8.99",
+      description: "Flatbread stuffed with savory spiced minced meat",
+    },
+  ],
   Veg: [
     {
-      name: "Paneer Butter Masala",
-      price: "$13.99",
-      description: "Cottage cheese cubes in a spicy and creamy tomato gravy",
+      name: "Dal Makhani",
+      price: "$12.99",
+      description: "Black lentils cooked overnight with butter and cream",
     },
     {
       name: "Kadhai Paneer",
@@ -77,34 +105,7 @@ const menuData: Record<Category, MenuItem[]> = {
         "Chicken cooked with fresh bell peppers, onions, and kadhai spices",
     },
   ],
-  Paratha: [
-    {
-      name: "Aloo Paratha",
-      price: "$3.99",
-      description:
-        "Flaky whole wheat flatbread stuffed with spiced mashed potatoes",
-    },
-    {
-      name: "Paneer Paratha",
-      price: "$6.99",
-      description: "Flatbread stuffed with spiced grated cottage cheese",
-    },
-    {
-      name: "Gobi Paratha",
-      price: "$4.99",
-      description: "Flatbread stuffed with savory spiced cauliflower",
-    },
-    {
-      name: "Egg Paratha",
-      price: "$6.99",
-      description: "A tasty layered flatbread cooked with a spiced egg mixture",
-    },
-    {
-      name: "Keema Paratha",
-      price: "$8.99",
-      description: "Flatbread stuffed with savory spiced minced meat",
-    },
-  ],
+
   Rolls: [
     {
       name: "Paneer Roll",
@@ -138,14 +139,14 @@ const menuData: Record<Category, MenuItem[]> = {
 };
 
 const categoryImages: Record<Category, string> = {
-  Veg: "/paneerButterMasala.jpg",
-  NonVeg: "/chickenCurry.webp",
   Paratha: "/paratha.jpg",
+  Veg: "/dal-Makhani.webp",
+  NonVeg: "/chickenCurry.webp",
   Rolls: "/chickenRoll.jpg",
 };
 
 export function MenuSection() {
-  const [activeTab, setActiveTab] = useState<Category>("Veg");
+  const [activeTab, setActiveTab] = useState<Category>("Paratha");
 
   return (
     <section className="relative w-full z-10">
