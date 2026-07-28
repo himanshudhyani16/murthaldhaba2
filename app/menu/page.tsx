@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { MenuCategory } from "@/components/menu/MenuCategory";
 import { PageHeader } from "@/components/PageHeader";
 import { TestimonialSection } from "@/components/TestimonialSection";
@@ -19,6 +20,12 @@ import {
   chaiCoffeeItems,
   dessertsItems,
 } from "@/data/menu";
+
+export const metadata: Metadata = {
+  title: "Menu | Indian Food Prices - Murthal Dhaba Calgary",
+  description:
+    "Browse Murthal Dhaba's full menu: parathas, curries, tandoori, biryani, rolls & momos. Authentic North Indian dishes in Calgary, with prices.",
+};
 
 export default function MenuPage() {
   return (

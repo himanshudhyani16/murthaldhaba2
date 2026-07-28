@@ -36,11 +36,11 @@ const menuData: Record<Category, MenuItem[]> = {
       price: "$6.99",
       description: "A tasty layered flatbread cooked with a spiced egg mixture",
     },
-    {
-      name: "Keema Paratha",
-      price: "$8.99",
-      description: "Flatbread stuffed with savory spiced minced meat",
-    },
+    // {
+    //   name: "Keema Paratha",
+    //   price: "$8.99",
+    //   description: "Flatbread stuffed with savory spiced minced meat",
+    // },
   ],
   Veg: [
     {
@@ -247,7 +247,6 @@ export function MenuSection() {
               </motion.div>
             </AnimatePresence>
           </div>
-
           {/* Right Tab Image */}
           <div className="w-full relative rounded-sm overflow-hidden min-h-[400px] lg:aspect-auto">
             <AnimatePresence mode="wait">
@@ -268,6 +267,7 @@ export function MenuSection() {
                 />
               </motion.div>
             </AnimatePresence>
+
             {/* Subtle overlay gradient to match the dark theme nicely */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none z-10"></div>
           </div>

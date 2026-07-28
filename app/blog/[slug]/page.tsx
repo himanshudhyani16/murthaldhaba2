@@ -73,11 +73,29 @@ export default async function BlogDetailPage({
               {post.title}
             </h1>
 
-            {post.content.map((paragraph, idx) => (
-              <p key={idx} className="text-white/70 leading-relaxed mb-6">
-                {paragraph}
-              </p>
-            ))}
+            {post.sections && post.sections.length > 0
+              ? post.sections.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="mb-8">
+                    {section.heading ? (
+                      <h2 className="text-white text-xl md:text-2xl font-semibold mb-4">
+                        {section.heading}
+                      </h2>
+                    ) : null}
+                    {section.paragraphs.map((paragraph, paragraphIdx) => (
+                      <p
+                        key={paragraphIdx}
+                        className="text-white/70 leading-relaxed mb-6"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                ))
+              : post.content.map((paragraph, idx) => (
+                  <p key={idx} className="text-white/70 leading-relaxed mb-6">
+                    {paragraph}
+                  </p>
+                ))}
 
             {post.gallery && post.gallery.length > 0 && (
               <>

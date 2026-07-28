@@ -7,9 +7,9 @@ import { Footer } from "../components/Footer";
 import { BackToTop } from "../components/BackToTop";
 
 export const metadata: Metadata = {
-  title: "Murthal Dhaba — Authentic Flavours & Fine Dining",
+  title: "North Indian Restaurant Calgary NE | Murthal Dhaba",
   description:
-    "Experience the finest authentic cuisine at Murthal Dhaba. Book a table, explore our seasonal menu, and indulge in dishes crafted by our passionate chefs.",
+    "Authentic Punjabi & North Indian food in NE Calgary. Tandoori, curries, fresh parathas & biryani. Pet-friendly patio. Dine-in or order online today.",
   icons: {
     icon: "/logo.png",
   },

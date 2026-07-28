@@ -9,10 +9,77 @@ export type BlogPost = {
   category: string;
   excerpt: string;
   content: string[];
+  sections?: {
+    heading?: string;
+    paragraphs: string[];
+  }[];
   tags: string[];
 };
 
 export const blogData: BlogPost[] = [
+  {
+    id: 5,
+    slug: "welcome-to-murthal-dhaba-indian-restaurant-calgary",
+    image: "/patio1.jpeg",
+    gallery: ["/DSC02971.jpg", "/insta/DSC03063.webp"],
+    date: "July 28, 2026",
+    author: "Murthal Dhaba",
+    title: "Welcome to Murthal Dhaba",
+    category: "Restaurant",
+    excerpt:
+      "Welcome to Murthal Dhaba in NE Calgary for fresh parathas, tandoori, curries, biryanis, warm hospitality, live music nights, and pet-friendly patio dining.",
+    content: [],
+    sections: [
+      {
+        heading: "Welcome to Murthal Dhaba",
+        paragraphs: [
+          "We're so glad you found us. If you've been searching for an Indian restaurant near me, we hope your search ends here. Located at 619 36 Ave NE, Calgary, AB T2E 2L8, Murthal Dhaba is our little slice of home, a cozy NE Calgary eatery where we bring you fresh-rolled parathas, sizzling tandoori, slow-cooked curries, aromatic biryanis, and classics like Butter Chicken and Dal Makhni.",
+          "We're open Monday to Saturday, 11 AM to 11 PM, and Sunday from 2 PM to 9 PM. Whether it's a family dinner, a birthday, a corporate gathering, or a festive celebration like Diwali or Holi, we love turning meals into memories. Our pet-friendly patio, live music nights, and warm hospitality all come from one simple idea: we want you to feel like you're eating ghar jaisa khana, food made with the same love as home.",
+        ],
+      },
+      {
+        heading: "What We're Known For",
+        paragraphs: [
+          "Our parathas are handmade and stuffed fresh to order, Aloo, Paneer, Gobi, Egg, and Keema, all cooked to perfection right on the tawa. Pair one with our Dal Makhni, simmered overnight for that deep, comforting flavor, or try our Mix Veg and Palak Paneer for something lighter.",
+          "We keep our kitchen true to traditional Punjabi methods, using fresh ingredients and carefully balanced spices in everything we make, from our silky Butter Chicken to our smoky Dal Tadka. We also offer generous portions of Biryani, Rolls, and a full range of vegetarian dishes, because we want there to be something here for everyone at your table.",
+        ],
+      },
+      {
+        heading: "Why Guests Call Us the Best Indian Restaurant Near Me",
+        paragraphs: [
+          "We hear it often, and it means the world to us: guests calling Murthal Dhaba the best Indian restaurant near me. We think it comes down to the little things, fresh produce, polite service, and recipes we've stayed true to for years. We're proud to be an Indo Canadian restaurant that blends authentic Punjabi cooking with the warmth of the community we serve, and we're honored to be considered among the top choices for an Indian restaurant in Calgary Alberta and across the wider search for an Indian restaurant in Calgary Canada.",
+        ],
+      },
+      {
+        heading: "More Than a Meal",
+        paragraphs: [
+          "We host kitty parties, engagements, festival specials, and live music evenings, because in our culture, food is never just food. It's a reason to gather, laugh, and linger a little longer over chai. Our outdoor patio is a favorite with pet owners looking for a relaxed evening under the Calgary sky.",
+          "We're proud to be part of Calgary's diverse community, blending classic Punjabi recipes with the warm, welcoming spirit of the city we now call home.",
+        ],
+      },
+      {
+        heading: "Craving Something Different?",
+        paragraphs: [
+          "If you typed steak sandwich near me, best pizza in Calgary, or pizza in Calgary into your search, we'd love the chance to show you something different. Trade that craving for our flaky stuffed parathas or a bowl of slow-simmered curry, and we think you'll be glad you did.",
+        ],
+      },
+      {
+        heading: "Visit Us or Get in Touch",
+        paragraphs: [
+          "We'd love to host you, whether you're stopping by for a quiet lunch, ordering takeout, or planning an event.",
+          "619 36 Ave NE, Calgary, AB T2E 2L8 | +1 204-951-5359 | murthal.dhaba36@gmail.com | murthaldhaba.com",
+          "Come hungry, leave full, happy, and already planning your next visit.",
+        ],
+      },
+    ],
+    tags: [
+      "Indian Restaurant",
+      "Calgary",
+      "North Indian Cuisine",
+      "Punjabi Food",
+      "Murthal Dhaba",
+    ],
+  },
   {
     id: 1,
     slug: "best-indian-restaurant-calgary-authentic-north-indian-food",
